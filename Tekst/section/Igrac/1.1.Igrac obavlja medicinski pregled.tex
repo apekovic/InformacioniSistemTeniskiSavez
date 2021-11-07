@@ -1,0 +1,68 @@
+\documentclass{article}
+\usepackage{longtable}
+\begin{document}
+%\begin{center}
+%\begin{tabularx}{\textwidth}{|1|X|}
+
+\begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+\hline
+    Kratak opis & Igrac treba da obavi medicinski pregled i da sistem dobije informaciju o rezultatu pregleda.\\ 
+\hline    
+    Učesnici & 
+         Igrac koji zeli da nastavi registrovanje za clana TSSa ili produzi clanstvo.
+    \\
+\hline
+   Preduslovi & \begin{enumerate}
+       \item Sistem je u funkciji.
+       \item Ako je igrac neregistrovan - popunio je sve licne podatke u formularu
+   \end{enumerate}\\
+\hline  
+    Postuslovi & \begin{enumerate}
+        \item Igrac je obavio sportski/medicinski pregled
+        \item Rezultat pregleda je prosledjen sistemu zbog daljih koraka registracije
+    \end{enumerate}\\
+\hline
+    Osnovni tok & \begin{enumerate}
+        \item Igrac u formularu za registraciju bira da li hoce da zakaze pregled preko sistema ili hoce da se pregleda uzivo
+        \item Ako bira da se pregleda preko sistema
+        \begin{itemize}
+            \item[2.1.] Igrac popunjava u kom periodu [datumi] mu odgovara da ode se pregleda i daje napomene kada sigurno ne moze.
+            \item[2.2.] Igrac potvrdjuje izbor.
+            \item[2.3.] Sistem bira prvi slobodan termin koji odgovara datom kriterijumu i lokaciju. medicinske ustanove na kojoj moze obaviti pregled,a koja je najbliza igracu na osnovu njegovih podataka o lokaciji i salje na mail igracu uz dugme za potvrdu termina i cenu pregleda.
+            \item[2.4.] Igrac potvrdjuje termin klikom na dugme.
+            \item[2.5.] Sistem organizuje pregled.
+        \end{itemize}
+        \item Ako igrac bira da sam organizuje pregled:
+        \begin{itemize}
+            \item[3.1.] Igrac potvrdjuje izbor.
+            \item[3.2.] Sistem salje lokaciju medicinskih ustanova na kojima moze obaviti pregled,a  koje su najblize igracu na osnovu njegovih podataka o lokaciji i cenu pregleda.
+        \end{itemize}
+        \item Nakon obavljenog pregleda sistem dobija informaciju o rezultatu pregleda (Prosao/Nije prosao).
+    \end{enumerate}\\
+\hline
+    Alternativni tokovi & \begin{itemize}
+        \item[A2.3.] Sistem salje igracu da u datom intervalu nema slobodnih termina i ponavlja se korak 1.
+    \end{itemize}\\
+\hline
+    Podtokovi & /\\
+
+\hline
+    Dodatne informacije & \begin{itemize}
+        \item Rezultat o pregledu sistem dobija od medicinske ustanove u kojoj je pregled obavljen
+    \end{itemize} \\
+\hline
+%\end{tabularx}
+%\end{center}    
+\caption{Obavljanje medicinskog pregleda} % needs to go inside longtable environment
+%\label{tab:myfirstlongtable}
+\end{longtable}
+
+
+%\begin{figure}[!ht]
+%\begin{center}
+%\includegraphics[scale=0.55]{sections/images/Dijagram_aktivnsti_registracije_uzivo.jpg}
+%\end{center}
+%\caption{Dijagram aktivnosti registracije online}
+%\label{fig:kontekst}
+%\end{figure}
+\end{document}

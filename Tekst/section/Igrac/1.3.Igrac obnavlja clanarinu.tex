@@ -1,0 +1,66 @@
+\documentclass{article}
+\usepackage{longtable}
+\begin{document}
+%\begin{center}
+%\begin{tabularx}{\textwidth}{|1|X|}
+
+\begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+\hline
+    Kratak opis & Igrac zeli da produzi svoje clanstvo u Savezu, tj produzi svoju registraciju, a to cini novim uspesnim obavljanjem sportskog/medicinskog pregleda.\\ 
+\hline    
+    Učesnici & 
+         Registrovani igrac koji zeli da ostane clan TSS, kako bi mogao da ucestvuje u na turnirima i u njihovoj organizaciji
+    \\
+\hline
+   Preduslovi & \begin{enumerate}
+       \item Sistem je u funkciji.
+       \item Igrac je registrovan na sistem
+   \end{enumerate}\\
+\hline  
+    Postuslovi & \begin{enumerate}
+        \item Igrac je uspesno produzio registraciju (clanarinu)
+        \item Baza podataka je azurirana.
+    \end{enumerate}\\
+\hline
+    Osnovni tok & \begin{enumerate}
+        \item Igrac otvara formu za registraciju i bira opciju da obavi medicinski pregled i da potvrdi svoje dosadasnje podatke ili ih izmeni.
+        \item Igrac obavlja medicinski pregled i odvija se podtok P1
+        \item Sistem dobija informaciju o rezultatu pregleda
+        \item Igrac dobija na mail informaciju da je pregled uspesno odradjen i salju mu se informacije o neophodnoj uplati za clansku kartu
+        \item Igrac uplacuje clanarinu i na formularu, pritiskom na dugme "Dokaz o uplati" izlazi forma na kojoj kaci potvrdu uplate i pritiskom na dugme "Potvrdi" zavrsava potvrdu.
+        \item Sistem nakon verifikacije salje mail sa:
+        \begin{itemize}
+            \item Potvrdom o uspesnoj uplati
+            \item Detaljima prispeca kartice nakon njene izrade
+        \end{itemize}
+        \item Sistem evidentira nalog kao produzen.
+        \item Baza je azurirana
+    \end{enumerate}\\
+\hline
+    Alternativni tokovi & \begin{itemize}
+        \item[A3] Ako je igrac odbijen na osnovu medicinskog pregleda salje mu se informacija da je njegova registracja odbijena.
+        \item[A4] Ako igrac ne uplati kotizaciju za clansku kartu u roku od mesec dana, sportska/medicinska potvrda mu istice i produzetak registracije je neuspesno zavrsen.
+    \end{itemize}\\
+\hline
+    Podtokovi & \begin{itemize}
+        \item[P1]: 1.1. Igrac obavlja medicinski pregled
+    \end{itemize}\\
+
+\hline
+    Dodatne informacije & / \\
+\hline
+%\end{tabularx}
+%\end{center}    
+\caption{Igrac obnavlja registraciju/clanarinu} % needs to go inside longtable environment
+%\label{tab:myfirstlongtable}
+\end{longtable}
+
+
+%\begin{figure}[!ht]
+%\begin{center}
+%\includegraphics[scale=0.55]{sections/images/Dijagram_aktivnsti_registracije_uzivo.jpg}
+%\end{center}
+%\caption{Dijagram aktivnosti registracije online}
+%\label{fig:kontekst}
+%\end{figure}
+\end{document}

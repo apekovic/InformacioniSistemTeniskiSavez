@@ -1,0 +1,5 @@
+1. klub moze da:
+	2.1. obnovi registraciju (produzi status clana saveza)
+	2.2. se registruje na sistem (uclani u savez)
+	2.3. istupi iz saveza
+  2.4. aplicira za organizaciju turnira

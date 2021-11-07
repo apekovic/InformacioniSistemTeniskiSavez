@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage{longtable}
+\begin{document}
+%\begin{center}
+%\begin{tabularx}{\textwidth}{|1|X|}
+\begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+\hline
+    Kratak opis & Igrac podnosi zahtev za pregled svih meceva po turniru.\\ 
+\hline    
+    Učesnici & Registrovani igraci
+    \\
+\hline
+   Preduslovi & \begin{enumerate}
+       \item Sistem je u funkciji.
+       \item Igrac je registrovan
+   \end{enumerate}\\
+\hline  
+    Postuslovi & \begin{enumerate}
+        \item Igrac je dobio pregled svih meceva po turniru
+    \end{enumerate}\\
+\hline
+    Osnovni tok & \begin{enumerate}
+        \item Igrac otvara stranicu TSS-a
+        \item Igrac bira karticu 'Turniri', zatim 'Dosadasnji rezultati'
+        \item Igrac filtrira pretragu po turnirima
+        \item Sistem prikazuje osvojene bodove na turniru, protivnika, rezultate po setovima i statistiku meca za svako kolo, tj. svaki mec na turniru
+    \end{enumerate}\\
+\hline
+    Alternativni tokovi & \begin{itemize}
+        \item[A3] Igrac nije odigrao nijedan mec: Sistem obavestava korisnika da nije odigrao nijedan mec. Proces se zavrsava
+    \end{itemize}\\
+\hline
+    Podtokovi & /\\
+\hline
+    /\\
+\hline
+    Dodatne informacije & \begin{itemize}
+        \item Bodovi se dobijaju nakon prvog kola
+        \item Informacije koje korisnik dobija o protivniku su: Ime, Prezime, Klub za koji igra i mesto koje zauzima na rang listi
+        \item Novcana nagrada moze biti i 0, ukoliko turnir ne obezbedjuje novcanu nagradu
+        \item Statistika meca obuhvata broj odigranih setova, broj dobijenih i izgubljenih setova, broj dobijenih i izgubljenih gemova.
+    \end{itemize}\\
+\hline
+%\end{tabularx}
+%\end{center}    
+\caption{Pregled rezultata po turniru} % needs to go inside longtable environment
+%\label{tab:myfirstlongtable}
+\end{longtable}
+
+
+%\begin{figure}[!ht]
+%\begin{center}
+%\includegraphics[scale=0.55]{sections/images/Dijagram_aktivnsti_registracije_uzivo.jpg}
+%\end{center}
+%\caption{Dijagram pregleda rezultata po turniru}
+%\label{fig:kontekst}
+%\end{figure}
+\end{document}

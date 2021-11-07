@@ -1,1 +1,11 @@
 
+1. Igrac moze da:
+	1.1. obavi medicinski sportski pregled
+	1.2. se registruje na sistem (uclani u savez)
+	1.3. obnovi clanarinu (produzi status clana saveza)
+	1.4. vidi sumirano evidencije po turnirima
+	1.5. vidi evidencije o svim odigranim mecevima po turnirima
+	1.6. pristupa kalendaru turnira
+	1.7. se prijavi za turnir
+	1.8. dobija informacije o rankingu
+	1.9. menja svoje podatke

@@ -1,0 +1,69 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{longtable}
+
+\begin{document}
+
+       \begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+            \hline
+                Kratak opis & Igrač želi da produži svoje članstvo u Savezu, tj produži svoju registraciju, a to čini novim uspešnim obavljanjem sportskog/medicinskog pregleda i plaćanjem članarine.\\ 
+            \hline    
+                Učesnici & \begin{itemize}
+                    \item Igrač (registrovani korisnik)
+                    \item Administrator
+                    \item Teniski Savez
+                    \item Medicinska ustanova
+                \end{itemize} \\
+            \hline
+               Preduslovi & \begin{enumerate}
+                   \item Sistem je u funkciji.
+                   \item Igrac postoji u sistemu.
+                   \item Nalog igrača je neaktivan.
+               \end{enumerate}\\
+            \hline  
+                Postuslovi & \begin{enumerate}
+                    \item Igrač je uspešno produžio registraciju (članarinu)
+                    \item Baza podataka je azurirana.
+                \end{enumerate}\\
+            \hline
+                Osnovni tok & \begin{enumerate}
+                    \item Igrač otvara na sistemu formu sa detaljima o nalogu i ulazi na formu za zakazivanje medicinskog pregleda.
+                    \item Prelazi se na slučaj upotrebe 3.1.3 Zakazivanje medicinskog pregleda.
+                    \item Nakon uspešnog zakazivanja pregleda prelazi se na slučaj upotrebe 3.7.1 Unosi rezultat pregleda igrača.
+                    \item Igrač otvara na sistemu formu sa detaljima o nalogu i ulazi na formu za produžavanje važenja naloga.
+                    \item Sistem traži unos šifre pregleda i da se okači dokument o obavljenom pregledu.
+                    \item Igrač unosi šifru pregleda i kači dokument o obavljenom pregledu.
+                    \item Sistem prikazuje nov prozor sa poljima za popunjavanje, čekiranje ili izmenu, kao i: 
+                    \begin{itemize}
+                        \item deo "Potvrda o uplati" da se doda prilog koji sadrži potvrdu o uplati za izradu legitimacije.
+                        \item deo "Potvrda o članstvu u klubu" da se doda dokument sa podacima o igraču i klubu za koji igra, koji je pečatiran.
+                        \item deo "Slika" da se doda mala slika koja će biti na takmičarskoj legitimaciji.
+                        \item dugme "Odustani".
+                    \end{itemize}  
+                    \item Igrač popunjava polja, opciono menja popunjena i dodaje priloge.
+                    \item Igrač potvr\dj uje izmene.
+                    \item Sistem šalje Teniskom Savezu obaveštenje o prispelom zahtevu za članstvo radi verifikacije podataka.
+                    \item Teniski Savez potvr\dj uje validnost podataka.
+                    \item Sistem šalje administratoru obaveštenje da produži nalog Igraču.
+                    \item Administrator evidentira nalog kao aktivan.
+                    \item Teniski Savez šalje korisniku e-mail sa detaljima prispeća kartice nakon njene izrade.
+                \end{enumerate}\\
+            \hline
+                Alternativni tokovi & 
+                \begin{itemize}
+                    \item[A5] Ako korisnik ne unese validnu šifru registracija se završava neuspešno. Ako je za datu šifru u bazi rezultat pregleda "Pao", korisniku se šalje mail da registracija nije moguća.
+                    \item[A9] Ako se ne popune obavezna polja i ne dodaju sva dokumenta, sistem izbacuje obaveštenje da polja moraju biti popunjena, kao i da moraju sva dokumenta da se prilože. Igrač se vraća na korak 7.
+                    \item[A11] Teniski Savez može konstatovati lažnu ili neispravnu uplatu i poslati korisniku e-mail da registracija može da se izvrši tek nakon izvršene uplate.
+                \end{itemize}\\
+            \hline
+                Podtokovi & /\\
+            \hline
+                Specijalni zahtevi & /\\
+            \hline
+                Dodatne informacije & / \\
+            \hline
+            \caption{Igrač obnavlja registraciju/članarinu}
+        \end{longtable}
+        
+\end{document}

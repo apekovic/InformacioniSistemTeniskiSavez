@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{longtable}
+
+\begin{document}
+
+        \begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+            \hline
+                Kratak opis & Igrač želi da se odjavi sa turnira.\\ 
+            \hline    
+                Učesnici & Igrač \\
+            \hline
+               Preduslovi & \begin{enumerate}
+                   \item Sistem je u funkciji.
+                   \item Nalog igrača je aktivan.
+                   \item Igrač se prethodno prijavio za izabrani turni.
+               \end{enumerate}\\
+            \hline  
+                Postuslovi & \begin{enumerate}
+                    \item Igrač je odjavio turnir.
+                    \item Baza je ažurirana.
+                \end{enumerate}\\
+            \hline
+                Osnovni tok & \begin{enumerate}
+                    \item Igrač ulazi na kalendar turnira
+                    \item Sistem prikazuje igraču kalendar turnira za celu godinu i opciju da filtrira samo prijavljene. Prikazani turniri su samo oni za koje igrač ispunjava uslov da se prijavi.
+                    \item Igrač bira da filtrira po prijavljenim turnirima.
+                    \item Sistem izbacuje kalendar njegovih prijavljenih turnira.
+                    \item Igrač bira turnir.
+                    \item Sistem prikazuje sve detalje o turniru i dugmiće "Odjavi" i "Odustani".
+                    \item Igrač pritiska dugme "Odjavi".        
+                    \item Sistem briše evidenciju o prijavi turnira, skida igrača sa spiska prijavljenih i igrač je uspešno odjavljen sa turnira.
+                \end{enumerate}\\
+            \hline
+                Alternativni tokovi & 
+                \begin{itemize}
+                    \item[A2] Ako igrač nije prijavio nijedan turnir izlazi obaveštenje "Prazan rezultat".
+                    \item[A3] Ako igrač ne filtrira po prijavljenim turnirima, nemamo korake 3. i 4., ali ako igrač izabere nasumičan turnir na koji nije prijavljen, neće imati opciju da se odjavi, već samo prijavi.
+                    \item[A5] Igrač pritiska dugme "Odustani" i ne odjavljuje se sa turnira.
+                \end{itemize}\\
+            \hline
+                Podtokovi & /\\
+            \hline
+                Specijalni zahtevi & /\\
+            \hline
+                Dodatne informacije & Klikom na turnir u okviru kalendara igraču izlazi obaveštenje o održavanju turnira, nagradama (bodovi, gde važe, da li ima novčne nagrade..), kategorija, lokacija, cena kotizacije. \\
+            \hline
+            \caption{Igrač se odjavljuje sa turnira} 
+        \end{longtable}        
+        
+\end{document}

@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{longtable}
+
+\begin{document}
+
+        \begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+            \hline
+                Kratak opis & Igrač želi da se prijavi na turnir.\\ 
+            \hline    
+                Učesnici & Igrač \\
+            \hline
+               Preduslovi & \begin{enumerate}
+                   \item Sistem je u funkciji.
+                   \item Nalog igrača je aktivan.
+               \end{enumerate}\\
+            \hline  
+                Postuslovi & \begin{enumerate}
+                    \item Igrač je prijavio turnir.
+                    \item Baza je ažurirana.
+                \end{enumerate}\\
+            \hline
+                Osnovni tok & \begin{enumerate}
+                    \item Igrač ulazi na kalendar turnira
+                    \item Sistem prikazuje igraču kalendar turnira za celu godinu i opciju da filtrira samo prijavljene. Prikazani turniri su samo oni za koje igrač ispunjava uslov da se prijavi. 
+                    \item Igrač bira turnir iz kalendara svih turnira.
+                    \item Sistem otvara prozor sa svim detaljima o turniru i dugmiće "Prijavi" i "Odustani".
+                    \item Igrač pritiska dugme "Prijavi".        
+                    \item Sistem čuva evidenciju o prijavi igrača.
+                \end{enumerate}\\
+            \hline
+                Alternativni tokovi & 
+                \begin{itemize}
+                    \item[A5] Igrač pritiska dugme "Odustani" i ne prijavljuje se na turnir.
+                \end{itemize}\\
+            \hline
+                Podtokovi & /\\
+            \hline
+                Specijalni zahtevi & /\\
+            \hline
+                Dodatne informacije & Klikom na turnir u okviru kalendara igraču izlazi obaveštenje o održavanju turnira, nagradama (bodovi, gde važe, da li ima novčne nagrade..), kategorija, lokacija, cena kotizacije. \\
+            \hline
+            \caption{Igrač se prijavljuje na turnir} 
+        \end{longtable}
+        
+\end{document}

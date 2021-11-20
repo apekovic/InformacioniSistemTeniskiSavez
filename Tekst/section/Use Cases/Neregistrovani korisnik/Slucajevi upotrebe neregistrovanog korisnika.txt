@@ -1,5 +1,0 @@
-0. Neregistrovani korisnik moze da:
-	0.1. se registruje na sistem i postane drugi tip korisnika
-	0.2. vidi rang liste igraca
-	0.3. vidi kalendar turnira
-	0.4. vidi obavestenja od strane saveza

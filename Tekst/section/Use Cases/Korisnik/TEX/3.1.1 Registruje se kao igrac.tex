@@ -36,7 +36,7 @@
                     \begin{enumerate}
                         \item[5.1] Korisnik dobija od sistema formu sa pitanjem "Da li želite da zakažete pregled?".
                         \item[5.2] Korisnik odgovara sa "Da".
-                        \item[5.3] Prelazi se na slučaj upotrebe 3.1.3 Zakazivanje medicinskog pregleda.
+                        \item[5.3] Prelazi se na slučaj upotrebe 3.1.3 Zakazuje medicinski pregled.
                         \item[5.4] Nakon uspešnog zakazivanja pregleda prelazi se na slučaj upotrebe 3.7.1 Unosi rezultat pregleda igrača.
                     \end{enumerate}
                     \item Ako korisnik izabere odgovor "Da":
@@ -51,8 +51,6 @@
                             \item "Kopija izvoda iz matične knjige".
                             \item "Dokument o obavljenom pregledu".
                         \end{itemize}  
-                        \item[6.4] Korisink popunjava polja, opciono menja popunjena i dodaje priloge.
-                        \item[6.5] Korisnik potvr\dj uje izmene.
                     \end{enumerate}
                  \end{enumerate}\\
             \hline
@@ -60,13 +58,15 @@
                 \begin{enumerate}
                     \item[8.] (Nastavak)  Ako korisnik izabere odgovor "Da":
                     \begin{enumerate}
+                        \item[6.4] Korisink popunjava polja, opciono menja popunjena i dodaje priloge.
+                        \item[6.5] Korisnik potvr\dj uje izmene.
                         \item[6.6] Sistem šalje Teniskom Savezu obaveštenje o prispelom zahtevu za članstvo radi verifikacije podataka.
                         \item[6.7] Teniski Savez potvr\dj uje validnost podataka.
                         \item[6.8] Sistem šalje administratoru obaveštenje o uspešno ispoštovanim obaveznim početnim koracima za registraciju.
                         \item[6.9] Administrator šalje korisniku e-mail sa:
                         \begin{itemize}
                             \item Detaljima prispeća kartice nakon njene izrade.
-                            \item Linkom (vremenski ogranicenim) privremenog naloga koji mora da se popuni podacima za registraciju (mail i šifra) i potvrdi.
+                            \item Linkom (vremenski ograničenim) privremenog naloga koji mora da se popuni podacima za registraciju (mail i šifra) i potvrdi.
                         \end{itemize}
                         \item[6.10] Igrač popunjava podatke i potvr\dj uje popunjavanje forme.
                         \item[6.11] Administrator dodeljuje igraču njegov registracioni broj koji će biti broj legitimacije.
@@ -81,12 +81,11 @@
                     \item[A6.2] \begin{itemize}
                         \item Ako korisnik ne unese validnu šifru registracija se završava neuspešno.
                         \item Ako je za datu šifru u bazi rezultat pregleda "Pao", korisniku se šalje mail da registracija nije moguća.
-                        \item Ako nije okačio dokument o obavljenom pregledu, sistem izbacuje obaveštenje da ne može da pre\dj e na sledeći korak bez tog dokumenta.
                     \end{itemize} 
                     \item[A6.3] Ako igrač pritisne na dugme "Odustani" registracija se neuspešno završava.
                     \item[A6.5] Ako se ne popune obavezna polja i ne dodaju sva dokumenta, sistem izbacuje obaveštenje da polja moraju biti popunjena, kao i da moraju sva dokumenta da se prilože. Sistem nas vraća nazad na korak 6.3. 
-                    \item[A6.7] Teniski Savez može konstatovati lažnu ili neispravnu uplatu i poslati korisniku e-mail da registracija može da se izvrši tek nakon izvršene uplate.
-                    \item[A6.9] Ako link istekne, korisnik može odgovoriti na isti mail sa zahtevom novog linka i proces se nastavlja ponavljanjem koraka 6.9.
+                    \item[A6.7] Teniski Savez može konstatovati neispravne ili nepotpune podatke. Tada sistem šalje korisniku e-mail da registracija nije uspešna.
+                    \item[A6.10] Ako link istekne, korisnik može odgovoriti na isti mail sa zahtevom novog linka i proces se nastavlja ponavljanjem koraka 6.9.
                 \end{itemize}\\
             \hline
                 Podtokovi & /\\
@@ -98,11 +97,12 @@
                     \begin{itemize}
                         \item Ime (Popunjeno)
                         \item Prezime (Popunjeno)
-                        \item JMBG
+                        \item JMBG (Popunjeno)
                         \item Datum ro\dj enja
                         \item Kvadratić "Dvojno državljanstvo" da obeleži ako je odgovor "Da".
                         \item E-mail (Popunjeno)
                         \item Telefon
+                        \item Adresa
                         \item Grad (Padajući meni)
                         \item Region (Padajući meni)
                         \item Klub (Padajući meni na osnovu izabranog Grada ili Regiona)

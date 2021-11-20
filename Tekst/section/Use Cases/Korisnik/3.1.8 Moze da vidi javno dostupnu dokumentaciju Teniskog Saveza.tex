@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{longtable}
+
+\begin{document}
+        \begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+            \hline
+                Kratak opis & Korisnik želi da vidi javno dostupnu dokumentaciju Teniskog Saveza.\\
+            \hline    
+                Učesnici & Korisnik koji želi da vidi javno dostupna dokumenta. \\
+            \hline
+               Preduslovi &  Sistem je u funkciji.\\
+            \hline  
+                Postuslovi &  Korisnik je pristupio dokumentaciji\\
+            \hline
+                Osnovni tok & \begin{enumerate}
+                    \item Korisnik ulazi na formu sa dokumentacijom.
+                    \item Sistem prikazuje formu sa listom godina, koje vode ka dokumentima u datoj godini.
+                    \item Korisnik bira godinu.
+                    \item Sistem otvara formu sa listom javno dostupnih dokumenata.
+                    \item Korisnik bira dokument i pristupa mu.
+                \end{enumerate}\\
+            \hline
+                Alternativni tokovi & /\\
+            \hline
+                Podtokovi & /\\
+            \hline
+                Specijalni zahtevi & /\\
+            \hline
+                Dodatne informacije & Dostupna dokumentacija je podeljena na nove stranice po godinama i svaka sadrži:
+                \begin{itemize}
+                    \item Pravilnik Teniskog Saveza u datoj godini.
+                    \item Statut koji važi u datoj godini.
+                    \item Finansijske izveštaje.
+                    \item Statističke izveštaje.
+                \end{itemize}\\
+            \hline
+            \caption{Korisnik pristupa javnim dokumentima TS-a.} 
+        \end{longtable}
+\end{document}

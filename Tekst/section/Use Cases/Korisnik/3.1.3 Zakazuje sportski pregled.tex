@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{longtable}
+
+\begin{document}
+        \begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+            \hline
+                Kratak opis & Korisnik se prijavljuje za sportski/medicinski pregled.\\ 
+            \hline    
+                Učesnici &\begin{itemize}
+                   \item Korisnik koji se prijavljuje za pregled. (Igrač može da se prijavi, ali on je specijalizacija korisnika, pa se sa korisnikom nastavlja u daljem tekstu).
+                   \item Medicinska ustanova koja dobija informaciju o pregledu.
+                \end{itemize} \\
+            \hline
+               Preduslovi & \begin{enumerate}
+                   \item Sistem je u funkciji.
+                   \item Na pitanje "Da li je obavljen sporski pregled?" je odgovoreno sa "Ne".
+               \end{enumerate}\\
+            \hline  
+                Postuslovi & \begin{enumerate}
+                    \item Zakazan je sportski pregled ili je zakazivanje neuspešno.
+                    \item Medicinska ustanova je obaveštena o novom zakazivanju ako je sportski pregled zakazan. Tako\dj e dobija formular koji treba da se popuni rezultatima pregleda.
+                \end{enumerate}\\
+            \hline
+                Osnovni tok & \begin{enumerate}
+                    \item Sistem otvara formu sa medicinskim ustanovama i filterima po gradu.
+                    \item Korisnik opciono filtrira, bira medicinsku ustanovu i ulazi na njen kalendar.
+                    \item Korisnik na kalendaru medicinske ustanove bira odgovarajući termin.
+                    \item Korisnik popunjava svoje podatke: ime, prezime, datum ro\dj enja, klub, e-mail i (ako je već registrovan) broj takmičarske legitimacije.
+                    \item Korisnik potvr\dj uje.
+                    \item Sistem je zakazao pregled u izabranoj medicinskoj ustanovi.
+                    \item Sistem je poslao mail medicinskom osoblju, iz odgovarajuce medicinske ustanove, o novom zakazanom pregledu.
+                \end{enumerate}\\
+            \hline
+                Alternativni tokovi & \begin{itemize}
+                    \item[A5] Korisnik može da odustane i time neuspešno završava zakazivanje pregleda. Može i da greškom proba da zakaže par sekundi posle nekoga i da termin ne bude dostupan, pa da ponovi Korak 2.
+                \end{itemize}\\
+            \hline
+                Podtokovi & /\\
+            \hline
+                Specijalni zahtevi & Korisnik mora da ima e-mail adresu.\\
+            \hline
+                Dodatne informacije & \begin{itemize}
+                    \item Mail adrese medicinskih ustanova se uzimaju iz baze svih medicinskih ustanova koje su licencirane za preglede igrača u okviru Teniskog Saveza.
+                \end{itemize} \\
+            \hline
+            \caption{Zakazivanje medicinskog pregleda}
+            \end{longtable}       
+
+\end{document}

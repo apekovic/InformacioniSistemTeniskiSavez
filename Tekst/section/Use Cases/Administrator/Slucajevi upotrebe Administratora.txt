@@ -1,7 +1,7 @@
 3.6  Administrator:
-	3.6.1  Kreira naloig igrača 
+	3.6.1  Kreira nalog igrača 
 	3.6.2  Ažurira / produžava nalog igrača
-	3.6.3  Kreira naloig kluba 
+	3.6.3  Kreira nalog kluba 
 	3.6.4  Ažurira / produžava nalog kluba 
 	3.6.5  Dodaje naloge za osoblje Teniskog Saveza 
 	3.6.6  Ažurira naloge za osoblje Teniskog Saveza 

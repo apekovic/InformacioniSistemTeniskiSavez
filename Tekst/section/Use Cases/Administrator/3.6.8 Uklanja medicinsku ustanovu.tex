@@ -1,0 +1,50 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{longtable}
+
+
+\begin{document}
+
+        \begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+            \hline
+                Kratak opis & Administrator uklanja medicinsku ustanovu koja nije više licencirana da radi za Teniski Savez. Teniski Savez je dostavio Administratoru pečatirani dokument sa podacima medicinske ustanove za uklanjanje\\ 
+            \hline    
+                Učesnici & Administrator koji uklanja podatke o medicinskoj ustanovi. \\
+            \hline
+               Preduslovi & \begin{enumerate}
+                   \item Sistem je u funkciji.
+                   \item Administrator je ulogovan na sistem.
+                   \item Medicinska ustanova postoji u sistemu u tekućoj godini.
+               \end{enumerate}\\
+            \hline  
+                Postuslovi & \begin{enumerate}
+                    \item Ažurirana je baza, uklanjaju se podaci o medicinskoj ustanovi.
+                \end{enumerate}\\
+            \hline
+                Osnovni tok & \begin{enumerate}
+                    \item Administrator ulazi na stranicu "Medicinske ustanove".
+                    \item Administrator na sistemu bira "Ukloni ustanovu".
+                    \item Sistem otvara formu na kojoj nudi mogućnost pretrage medicinskih ustanova na osnovu naziva ili broja licence.
+                    \item Administrator bira medicinsku ustanovu i pritiska dugme "Ukloni".
+                    \item Sistem izbacuje obaveštenje sa pitanjem "Da li ste sigurni da želite da uklonite ovu medicinsku ustanovu?".
+                    \item Administrator potvr\dj uje.
+                    \item Sistem šalje medicinskoj ustanovi E-mail obaveštenje da je uklonjena iz sistema.
+                \end{enumerate}\\
+            \hline
+                Alternativni tokovi & 
+                \begin{itemize}
+                    \item[A7] Ako Administrator odustane, uklanjanje medicinske ustanove je neuspešno.
+                \end{itemize} \\
+            \hline
+                Podtokovi & /\\
+            \hline
+                Specijalni zahtevi &  Medicinska ustanova mora da ima E-mail.\\
+            \hline
+                Dodatne informacije & Teniski Savez je u dokumentu morao da navede sve neophodne informacije. Bez toga Administrator ne bi ni počeo proces dodavanja medicinske ustanove.\\
+            \hline
+            \caption{Uklanja medicinsku ustanovu}
+        \end{longtable}
+        
+
+\end{document}

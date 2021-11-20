@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{longtable}
+
+\begin{document}
+
+        \begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+            \hline
+                Kratak opis & Administrator je od osoblja Teniskog Saveza dobio uživo (ili preko e-maila) pečatiran dokument da treba da doda u sistem novu medicinsku ustanovu. U tom dokumentu su navedeni podaci o toj ustanovi. \\ 
+            \hline    
+                Učesnici & Administrator koji dodaje novu medicinsku ustanovu u sistem. \\
+            \hline
+               Preduslovi & \begin{enumerate}
+                   \item Sistem je u funkciji.
+                   \item Administrator je ulogovan na sistem.
+               \end{enumerate}\\
+            \hline  
+                Postuslovi & \begin{enumerate}
+                    \item Ažurirana je baza podacima nove medicinske ustanove i Teniski Savez ima uvid u kalendar medicinske ustanove zbog prijave igrača na pregled.
+                \end{enumerate}\\
+            \hline
+                Osnovni tok & \begin{enumerate}
+                    \item Administrator ulazi na stranicu "Medicinske ustanove".
+                    \item Administrator na sistemu bira "Dodaj novu ustanovu"
+                    \item Sistem otvara stranicu sa sledećim opcijama za dodavanje:
+                    \begin{itemize}
+                        \item Ime medicinske ustanove
+                        \item Adresa (ulica, broj)
+                        \item Poštanski broj
+                        \item Grad
+                        \item Kontakt telefon
+                        \item Link ka kalendaru za zakazivanje pregleda
+                        \item E-mail
+                        \item Broj licence
+                    \end{itemize}
+                    \item Administrator popunjava sve podatke.
+                    \item Administrator potvr\dj uje.
+                \end{enumerate}\\
+            \hline
+                Alternativni tokovi & 
+                \begin{itemize}
+                    \item[A5] Ako Administrator pritisne "Odustani", dodavanje medicinske ustanove je neuspešno.
+                \end{itemize} \\
+            \hline
+                Podtokovi & /\\
+            \hline
+                Specijalni zahtevi & /\\
+            \hline
+                Dodatne informacije & Teniski Savez je u dokumentu morao da navede sve neophodne informacije. Bez toga Administrator ne bi ni počeo proces dodavanja medicinske ustanove.\\
+            \hline
+            \caption{Dodaje novu medicinsku ustanovu}
+        \end{longtable}
+
+\end{document}

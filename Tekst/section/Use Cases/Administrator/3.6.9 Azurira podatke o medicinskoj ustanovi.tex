@@ -1,0 +1,63 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{longtable}
+
+
+\begin{document}
+
+    \begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+        \hline
+            Kratak opis & Administrator je od osoblja Teniskog Saveza dobio uživo (ili preko e-maila) pečatiran dokument da treba da izmeni u sistem podatke o medicinskoj ustanovi. U tom dokumentu su navedeni podaci o toj ustanovi. \\ 
+        \hline    
+            Učesnici &\begin{itemize}
+               \item Administrator
+               \item Medicinska ustanova
+            \end{itemize} \\
+        \hline
+           Preduslovi & \begin{enumerate}
+               \item Sistem je u funkciji.
+               \item Administrator je ulogovan na sistem.
+               \item Medicinska ustanova postoji u sistemu.
+           \end{enumerate}\\
+        \hline  
+            Postuslovi & \begin{enumerate}
+                \item Ažurirana je baza podacima medicinske ustanove.
+            \end{enumerate}\\
+        \hline
+            Osnovni tok & \begin{enumerate}
+                \item Administrator ulazi na stranicu "Medicinske ustanove".
+                \item Sistem otvara formu na kojoj nudi mogućnost pretrage medicinskih ustanova na osnovu naziva ili broja licence.
+                \item Administrator bira medicinsku ustanovu i pritiska dugme "Izmeni".
+                \item Sistem izbacuje formu sa navedenim svim poljima koji postoje u tekućoj godini o medicinskoj ustanovi:
+                        \begin{itemize}
+                            \item Ime medicinske ustanove
+                            \item Adresa (ulica, broj)
+                            \item Poštanski broj
+                            \item Grad
+                            \item Kontakt telefon
+                            \item Link ka kalendaru za zakazivanje pregleda
+                            \item E-mail
+                            \item Broj licence
+                        \end{itemize}
+                \item Administrator menja podatke.
+                \item Administrator potvr\dj uje.
+                \item Sistem izbacuje obaveštenje sa pitanjem "Da li ste sigurni da želite da ažurirate ovu medicinsku ustanovu?".
+                \item Administrator potvr\dj uje.
+            \end{enumerate}\\
+        \hline
+            Alternativni tokovi & 
+            \begin{itemize}
+                \item[A6-8] Ako Administrator odustane, ažuriranje medicinske ustanove je neuspešno.
+            \end{itemize} \\
+        \hline
+            Podtokovi & /\\
+        \hline
+            Specijalni zahtevi &  /\\
+        \hline
+            Dodatne informacije & Teniski Savez je u dokumentu morao da navede sve neophodne informacije. Bez toga Administrator ne bi ni počeo proces dodavanja medicinske ustanove.\\
+        \hline
+        \caption{Ažurira podatke o medicinskoj ustanovi}
+    \end{longtable}
+
+\end{document}

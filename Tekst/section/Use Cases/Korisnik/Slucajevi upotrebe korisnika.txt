@@ -6,5 +6,4 @@
 	3.1.5  Može da vidi rang listu igrača
 	3.1.6  Može da vidi rezultate igrača 
 	3.1.7  Može da vidi obaveštenja od strane Teniskog Saveza 
-	3.1.8  Može da vidi obaveštenja od strane Teniskog Saveza 
-	3.1.9  Može da vidi javno dostupnu dokumentaciju Teniskog Saveza 
+	3.1.8  Može da vidi javno dostupnu dokumentaciju Teniskog Saveza 

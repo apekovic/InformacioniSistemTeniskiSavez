@@ -4,7 +4,8 @@
 	3.6.3  Kreira naloig kluba 
 	3.6.4  Ažurira / produžava nalog kluba 
 	3.6.5  Dodaje naloge za osoblje Teniskog Saveza 
-	3.6.6  Brise naloge za osoblje Teniskog Saveza 
-	3.6.7  Dodaje novu medicinsku ustanovu 
-	3.6.8  Uklanja medicinsku ustanovu 
-	3.6.9  Ažurira podatke o medicinskoj ustanovi 
+	3.6.6  Ažurira naloge za osoblje Teniskog Saveza 
+	3.6.7  Brise naloge za osoblje Teniskog Saveza 
+	3.6.8  Dodaje novu medicinsku ustanovu 
+	3.6.9  Uklanja medicinsku ustanovu 
+	3.6.10 Ažurira podatke o medicinskoj ustanovi 

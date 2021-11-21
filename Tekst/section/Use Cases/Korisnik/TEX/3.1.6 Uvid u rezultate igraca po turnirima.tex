@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage{longtable}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+    \begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+        \hline
+            Kratak opis & Korisnik podnosi zahtev za uvid u rezultate igrača po turnirima.\\ 
+        \hline    
+            Učesnici & Korisnik\\
+        \hline
+            Preduslovi & 
+                \begin{enumerate}
+                    \item Sistem je u funkciji.
+                \end{enumerate}\\
+        \hline  
+            Postuslovi & 
+                \begin{enumerate}
+                    \item Korisnik je dobio pregled rezultata igrača po turnirima.
+                \end{enumerate}\\
+        \hline
+            Osnovni tok & 
+                \begin{enumerate}
+                    \item Korisnik otvara stranicu Teniskog saveza i bira karticu "Turniri".
+                    \item Sistem prikazuje praznu tabelu.
+                    \item Korisnik bira igrača za kojeg želi da vidi rezultate.
+                    \item Korisnik bira ime kluba.
+                    \item Korisnik bira kategoriju turnira.
+                    \item Sistem prikazuje rezultate na osnovu unetih podataka.
+                \end{enumerate}\\
+        \hline
+            Alternativni tokovi & 
+                \begin{enumerate}
+                    \item A[6] Ako korisnik ništa ne odabere, prikazuje se prazna tabela. Proces se završava.
+                \end{enumerate}\\
+        \hline
+            Podtokovi & /\\
+        \hline
+            Specijalni zahtevi & /\\
+        \hline
+            Dodatne informacije & /\\
+        \hline
+        \caption{Pregled rezultata igraca po turnirima}
+    \end{longtable}
+\end{document}

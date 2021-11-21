@@ -1,0 +1,73 @@
+\documentclass{article}
+\usepackage{longtable}
+\usepackage[T1]{fontenc}
+\begin{document}
+%\begin{center}
+%\begin{tabularx}{\textwidth}{|1|X|}
+\begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+\hline
+    Kratak opis & Korisnik vrši registraciju kao klub tako što popunjava formular. Nakon toga sistem vrši validaciju podataka, registruje klub i šalje potvrdu korisniku.\\ 
+\hline    
+    Učesnici & \begin{enumerate}
+        \item Korisnik koji želi da se registruje kao klub u okviru Teniskog saveza.
+        \item Teniski Savez koji odobrava registraciju. 
+    \end{enumerate}
+    \\
+\hline
+   Preduslovi & \begin{enumerate}
+       \item Sistem je u funkciji.
+       \item Korisnik nije registrovan.
+   \end{enumerate}\\
+\hline  
+    Postuslovi & \begin{enumerate}
+        \item Korisnik se registrovao kao klub, tj. član Teniskog Saveza.
+        \item Baza podataka je ažurirana.
+    \end{enumerate}\\
+\hline
+    Osnovni tok & \begin{enumerate}
+        \item Korisnik otvara formu za registraciju.
+        \item Sistem prikazuje stranicu sa svim podacima bitnim za registraciju u okviru Teniskog Saveza, kao i opciju za registrovanje.
+        \item Korisnik bira da se registruje.
+        \item Sistem izbacuje formu sa opcijama tipa člana za registraciju.
+        \item Korisnik bira tip "Klub".
+        \item Sistem prikazuje formular koji korisnik treba da popuni.
+        \item Korisnik popunjava formular sa traženim podacima.
+        \item Korisnik potvđuje formular klikom na dugme potvrdi.
+        \item Sistem vrši validaciju podataka.
+        \item Sistem čuva podatke i pravi privremni nalog.
+        \item Sistem šalje korisniku e-mail sa privremenim (vremenski ograničenim) linkom za potvrdu i čeka na potvrdu.
+        \item Korisnik proverava e-mail i potvrđuje registraciju.
+        \item Sistem šalje zahtev za podnošenje dodatne dokumetacije.
+        \item Korisnik dostavlja traženu dokumentaciju.
+        \item Teniski Savez vrši validaciju dostavljene dokumetacije i odobrava prijavu.
+        \item Teniski Savez šalje e-mail da su podaci ispravni i fakturu za članarinu koja mora biti uplaćena do naznačenog roka.
+        \item Korisnik uplaćuje članarinu i šalje fakturu Teniskom Savezu.
+        \item Sistem potvrđuje uplatu.
+        \item Sistem obeležava korisnički nalog kao klubski i kao aktivan.
+        \item Sistem obaveštava korisnika da je nalog uspešno napravljen.
+    \end{enumerate}\\
+\hline
+    Alternativni tokovi & \begin{itemize}
+        \item[A5] Korisnik je izabrao da se registruje kao igrač: svodi se na slučaj upotrebe 3.1.1 Registruj se kao igrač.
+        \item[A9] Neuspešno popunjavanje formulara: sistem obaveštava korisnika da podaci nisu pravilno uneti. Slučaj se nastavlja na koraku 7.
+        \item[A12] Link za registraciju je istekao: korisnik nije potvrdio registraciju. Sistem briše nalog. Proces se završava.
+        \item[A12] E-mail nije stigao korisniku: korisnik obaveštava sistem da mu ponovo pošalje e-mail. Slučaj se nastavlja u koraku 11.
+        \item[A14] Korisnik nije dostavio traženu dokumetaciju: Sistem briše privremeni nalog. Proces se završava.
+        \item[A15] Teniski Savez ne odobrava prijavu: Teniski Savez šalje korisniiku razloge odbijanja. Sistem briše privremeni nalog. Proces se završava.
+        \item[A17] Korisnik nije uplatio članarinu u predviđenom roku: Sistem briše privremeni nalog. Proces se završava.
+    \end{itemize}\\
+\hline
+    Podtokovi & /\\
+\hline
+    Specijalni zahtevi & /\\
+\hline
+    Dodatne informacije & \begin{itemize}
+        \item Formular za registraciju zahteva: ime kluba, lozinka, grad, adresa, poštanski broj, zvaničnu e-mail adresu, broj terena, broj svlačionica, postojanje kafića/restorana u okviru kluba.
+        \item Potrebna dokumetacija: rešenje o osnivanju, potvrda o izvršenoj registraciji u Ministarstvu finansija (Poreska uprava).
+        \item Članarina obuhvata: dokaz o uplati za upis novog kluba, dokaz o uplati za godišnju članarinu.
+    \end{itemize} \\
+\hline
+   
+\caption{Korisnik se registacija kao klub}
+\end{longtable}
+\end{document}

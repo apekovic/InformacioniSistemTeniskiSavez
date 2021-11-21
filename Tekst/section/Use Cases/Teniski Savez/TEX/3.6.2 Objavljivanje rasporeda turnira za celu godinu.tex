@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage{longtable}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+    \begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+        \hline
+            Kratak opis & Teniski savez objavljuje raspored turnira za celu godinu.\\ 
+        \hline    
+            Učesnici & Teniski savez i administrator.\\
+        \hline
+            Preduslovi & 
+                \begin{enumerate}
+                    \item Sistem je u funkciji.
+                    \item Teniski savez je obučen za objavljivanje informacija na sajt.
+                \end{enumerate}\\
+        \hline  
+            Postuslovi & 
+                \begin{enumerate}
+                    \item Objavljen je raspored turnira za celu godinu.
+                    \item Rasporedu se može pristupiti preko stranice.
+                \end{enumerate}\\
+        \hline
+            Osnovni tok & 
+                \begin{enumerate}
+                    \item Teniski savez ulazi u karticu "Kalendar turnira".
+                    \item Teniski savez bira opciju "Novi kalendar turnira".
+                    \item Sistem prikazuje formu.
+                    \item Teniski savez popunjava kada se turnir održava, ko organizuje turnir, gde se turnir održava, koja je nagrada, kolika je kotizacija za učešće, gde važe osvojeni bodovi i kojoj kategoriji turnir pripada. 
+                    \item Teniski savez potvrđuje formu.
+                    \item Sistem obaveštava teniski savez da je uspešno podneo zahtev i da će informacije biti vidljive kada administrator odobri.
+                    \item Sistem šalje mail administratoru o zahtevu za odobravanju objavljivanja rasporeda turnira.
+                    \item Administrator prima mail od sistema.
+                    \item Administrator validira podatke.
+                    \item Sistem objavljuje podatke.
+                \end{enumerate}\\
+        \hline
+            Alternativni tokovi & 
+                \begin{itemize}
+                    \item[A9] Ako administrator ne odobri zahtev, podaci se ne objavljuju. Proces se završava.
+                \end{itemize}\\
+        \hline
+            Podtokovi & /\\
+        \hline
+            Specijalni zahtevi & /\\
+        \hline
+            Dodatne informacije & 
+                \begin{itemize}
+                    \item Korisnik koji bi gledao ovu stranicu na sajtu ne bi imao mogućnost da se prijavi na neki od turnira.
+                \end{itemize}\\
+        \hline 
+        \caption{Objavljivanje rasporeda turnira za celu godinu}
+    \end{longtable}
+\end{document}

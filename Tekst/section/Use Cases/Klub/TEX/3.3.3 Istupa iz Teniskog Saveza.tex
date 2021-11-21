@@ -1,0 +1,60 @@
+\documentclass{article}
+\usepackage{longtable}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\begin{document}
+
+\begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+\hline
+    Kratak opis & Klub istupa iz Tensiki Savez.\\ 
+\hline    
+    Učesnici & \begin{enumerate}
+        \item Registrovani klub koji želi da istupi iz Teniski Savez.
+    \end{enumerate}
+         
+    \\
+\hline
+   Preduslovi & \begin{enumerate}
+       \item Klub je član Teniskog Saveza.
+   \end{enumerate}\\
+\hline  
+    Postuslovi & \begin{enumerate}
+        \item Klub nije član Teniskog saveza.
+        \item Baza podataka je ažurirana.
+    \end{enumerate}\\
+\hline
+    Osnovni tok & \begin{enumerate}
+        \item Klub istupa iz Teniskog saveza.
+        \item Sistem obaveštava klub da više nije član Teniskog Saveza.
+    \end{enumerate}
+    \\
+
+\hline
+    Podtokovi &  \begin{enumerate}
+        \item[1.1] Klub istupa tako što ne plaća članarinu:\begin{enumerate}
+            \item Korisnik nije platio kotizaciju. 
+            \item Sistem obaveštava korisnika da nije produžio registraciju.
+        \end{enumerate}
+        \item[1.2] Klub inicira istupanje iz Teniskog Saveza: \begin{enumerate}
+            \item Korisnik bira opciju za izlazak iz Teniskog Saveza.
+            \item Sistem traži od korisnika da unese šifru.
+            \item Korisnik unosi šifru i potvrđuje unos.
+            \item Sistem validira unetu šifru.
+        \end{enumerate}
+    \end{enumerate}\\
+  \hline  
+    Alternativni tokovi & \begin{enumerate}
+            \item[A1] 2.4 Korisnik je uneo pogrešnu šifru: Sistem obaveštava korisnika da šifra nije validna. Slučaj se nastavlja na koraku 1.2.2 .
+        \end{enumerate}\\
+
+
+\hline
+    Specijalni zahtevi & /\\
+\hline
+    Dodatne informacije & /\\
+\hline
+  
+\caption{Istupanje kluba iz TSS} 
+
+\end{longtable}
+\end{document}

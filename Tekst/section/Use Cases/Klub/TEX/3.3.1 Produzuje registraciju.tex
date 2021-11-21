@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage{longtable}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\begin{document}
+
+\begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+\hline
+    Kratak opis & Svaki registrovani klub mora jednom godišnje da obnavlja svoju registraciju uplatom kotizacije na račun TSS. Sistem će obavestiti svaki klub mesec dana pred isteka registracije da je potrebno obnoviti registraciju.\\ 
+\hline    
+    Učesnici & \begin{enumerate}
+        \item Klub koji želi da produži registraciju.
+    \end{enumerate}
+    \\
+\hline
+   Preduslovi & \begin{enumerate}
+       \item Sistem je u funkciji.
+       \item Klub postoji u sistemu.
+   \end{enumerate}\\
+\hline  
+    Postuslovi & \begin{enumerate}
+        \item Klub je obnovio registraciju.
+        \item Baza podataka je ažurirana.
+    \end{enumerate}\\
+\hline
+    Osnovni tok & \begin{enumerate}
+        \item Sistem obaveštava klub o datumu isteka stare registracije slanjem e-mail i notifikacijom na početnoj staranici koju klub vidi kada se uloguje na sistem.
+        \item Klub uplaćuje članarinu u predviđenom roku.
+        \item Sistem šalje potvrdu o uplati.
+        \item Sistem šalje formular kako bi klub potvrdio da su podaci o klubu aktuelni.
+        \item Klub potvrđuje podatke.
+        \item Sistem šalje potvrdu o uspešnoj obnovi registracije.
+    
+    \end{enumerate}\\
+\hline
+    Alternativni tokovi & \begin{itemize}
+        \item[A2] Klub nije uplatio članarinu: sistem obaveštava klub da je registracija istekla. Proces se završava.
+        \item[A5] Klub ažurira svoje podatke. Slučaj se nastavlja u koraku 5.
+    \end{itemize}\\
+\hline
+    Podtokovi & /\\
+\hline
+    Specijalni zahtevi & Korisnik mora da ima e-mail adresu.\\
+\hline
+    Dodatne informacije & / \\
+\hline
+    
+\caption{Produžetak registracije} 
+
+\end{longtable}
+
+\end{document}

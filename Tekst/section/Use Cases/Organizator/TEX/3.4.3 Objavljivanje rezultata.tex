@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage{longtable}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\begin{document}
+
+\begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+\hline
+    Kratak opis & Organizator objavljuje rezltate, bodove i ažurira žreb.\\ 
+\hline    
+    Učesnici & 
+         Organizator koji zadužen za objavljivanje rezultata.
+    \\
+\hline
+   Preduslovi & \begin{enumerate}
+       \item Sistem je u funkciji.
+       \item Meč je završen.
+   \end{enumerate}\\
+\hline  
+    Postuslovi & \begin{enumerate}
+        \item Uneti su rezultati meča u sistem.
+    \end{enumerate}\\
+\hline
+    Osnovni tok & \begin{enumerate}
+        \item Organizator se prijavljuje na sistem.
+        \item Organizator bira opciju unosa rezultata.
+        \item Organizator unosi rezultat meča.
+        \item Organizator unosi preliminarne bodove. 
+        \item Organizator ažurira žreb.
+        \item Organizator potvrđuje sve promene.
+    \end{enumerate}\\
+\hline
+    Alternativni tokovi & /\\
+\hline
+    Podtokovi & \begin{enumerate}
+        \item [3.1] Meč je regularno završen: \begin{enumerate}
+                    \item Organizator unosi broj osvojenih setova i gemova.
+                    \end{enumerate}
+        \item [3.2] Meč je završen diskvalifikacijom igrača: \begin{enumerate}
+                    \item Organizator unosi dodeljenu pobedu.
+                    \item Organizator šalje obaveštenje o diskvalifikaciji Teniskom Savezu.
+                    \end{enumerate}
+        \item [3.2] Meč je završen nepojavljivanjem jednog od igraca: \begin{enumerate}
+            \item Organizator unosi pobedu službenim rezultatom.
+        \end{enumerate}
+        \item [3.3] Meč je završen predajom jednog od igraca: \begin{enumerate}
+            \item Organizator unosi trenutni rezultat i upisuje pobedu.
+        \end{enumerate}
+    \end{enumerate}\\
+\hline
+    Specijalni zahtevi & /\\
+\hline
+    Dodatne informacije & / \\
+\hline
+
+\caption{Organizator objavljuje rezultate, bodove i ažurira tabelu} 
+\end{longtable}
+
+\end{document}

@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage{longtable}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\begin{document}
+
+\begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+\hline
+    Kratak opis & Organizator unosi konačne rezultate turnira.\\ 
+\hline    
+    Učesnici & \begin{enumerate}
+        \item Organizator koji unosi podatke.
+    \end{enumerate}
+    \\
+\hline
+   Preduslovi & \begin{enumerate}
+       \item Sistem je u funkciji.
+       \item Odigrani su svi mečevi na turniru.
+   \end{enumerate}\\
+\hline  
+    Postuslovi & \begin{enumerate}
+        \item Turnir je arhiviran i uneti su svi podaci.
+        \item Organizator gubi svojstvo organizatora.
+        \item Baza podataka se ažurira.
+    \end{enumerate}\\
+\hline
+    Osnovni tok & \begin{enumerate}
+        \item Organizator se prijavljuje na sistem.
+        \item Organizator bira opciju za završetak turnira.
+        \item Organizator unosi sve podatke vezane za turnir.
+        \item Sistem validira podatke.
+        \item Sistem obaveštava organizatora da je trunir uspešno završen.
+    \end{enumerate}\\
+\hline
+    Alternativni tokovi & \begin{enumerate}
+        \item [A4] Nisu uneti svi podaci: sistem obaveštava organizatora da podaci nisu pravilno uneti. Slučaj se nastavlja na koraku 3.
+    \end{enumerate}\\
+\hline
+    Podtokovi & /\\
+\hline
+    Specijalni zahtevi & /\\
+\hline
+    Dodatne informacije & Podaci vezani za turnir: Pobednik turnira, konačna raspodela bodova, konačna raspodela novca i svi rezultati. \\
+\hline
+
+\caption{Unos konačnih rezultata}
+\end{longtable}
+
+\end{document}

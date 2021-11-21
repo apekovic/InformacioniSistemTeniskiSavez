@@ -1,0 +1,54 @@
+\documentclass{article}
+\usepackage{longtable}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\begin{document}
+
+\begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+\hline
+    Kratak opis & Organizator traži odlaganje turnira.\\ 
+\hline    
+    Učesnici & \begin{enumerate}
+        \item Organizator koji traži odlaganje turnira.
+        \item Teniski Savez koji odobrava odlaganje turnira.
+    \end{enumerate}
+    \\
+\hline
+   Preduslovi & \begin{enumerate}
+       \item Sistem je u funkciji.
+       \item Da je organizator zadužen za turnir.
+   \end{enumerate}\\
+\hline  
+    Postuslovi & \begin{enumerate}
+        \item Turnir je odložen. 
+        \item Kalendar je ažuriran. 
+    \end{enumerate}\\
+\hline
+    Osnovni tok & \begin{enumerate}
+        \item Organizator se prijavljuje na sistem.
+        \item Organizator bira opciju za odlaganje turnira.
+        \item Organizator unosi razloge odlaganja turnira.
+        \item Teniski savez odobrava odlganje turnira.
+        \item Sistem obaveštava organizatora da je trunir odložen.
+    \end{enumerate}\\
+\hline
+    Alternativni tokovi & \begin{enumerate}
+        \item [A4] Teniski savez neodobrava odlaganje turnira: 
+        \begin{enumerate}
+            \item Sistem obaveštava organizatora da razlog za odlaganje nije validan. 
+            \item Sistem nudi opciju za odustajanje od organizacije.
+            \item Organizator bira opciju za odustajanje: svodi se na slučaj upotrebe 3.1.1 Odustajanje organizatora od organizacije.
+        \end{enumerate}
+    \end{enumerate}\\
+\hline
+    Podtokovi & /\\
+\hline
+    Specijalni zahtevi & /\\
+\hline
+    Dodatne informacije & /\\
+\hline
+
+\caption{Zahtev za odlaganje turnira} 
+\end{longtable}
+
+\end{document}

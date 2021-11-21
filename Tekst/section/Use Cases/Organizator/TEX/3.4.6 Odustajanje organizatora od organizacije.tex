@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage{longtable}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\begin{document}
+
+\begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+\hline
+    Kratak opis & Organizator odustaje od organizacije turnira.\\ 
+\hline    
+    Učesnici & \begin{enumerate}
+        \item Organizator koji želi da odustane od organizacije turnira. 
+        \item Tesniski Savez koji odobrava odustajanje.
+    \end{enumerate}
+    \\
+\hline
+   Preduslovi & \begin{enumerate}
+       \item Sistem je u funkciji.
+       \item Organizator je bio zadužen za organizaciju turnira.
+   \end{enumerate}\\
+\hline  
+    Postuslovi & \begin{enumerate}
+        \item Klub gubi status organizatora za turnir.
+        \item Kalendar je ažuriran.
+        \item Turnir može da dobije novog organizatora.
+    \end{enumerate}\\
+\hline
+    Osnovni tok & \begin{enumerate}
+        \item Organizator se prijavljuje na sistem.
+        \item Organizator na vreme podnosi zahtev za odustajanje od organizacije turnira uz obrazloženje.
+        \item Sistem obaveštava korisnika da je Teniski Savez primio zahtev.
+        \item Teniski Savez obavestava klub da je oslobođen dodatnih troskova.
+        \item Teniski Savez potvrđuje zahtev.
+        \item Sistem briše organizatora iz kalendara turnira.
+        \item Sistem prikazuje poruku "Uspešno ste odustali od organizacije!".
+
+    \end{enumerate}\\
+\hline
+    Alternativni tokovi & \begin{enumerate}
+            \item[A2] Organizator nije na vreme podneo zahtev za odustajanje od organizacije turnira: Teniski savez obaveštava klub o naknadama i penalima koje ce snositi. Slučaj se nastavlja na koraku 5.
+        \end{enumerate}\\
+\hline
+    Podtokovi & /\\
+\hline
+    Specijalni zahtevi & /\\
+\hline
+    Dodatne informacije & / \\
+\hline
+
+\caption{Organizator odustaje od organizacije turnira}
+\end{longtable}
+\end{document}

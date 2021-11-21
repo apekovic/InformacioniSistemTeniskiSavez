@@ -1,0 +1,63 @@
+\documentclass{article}
+\usepackage{longtable}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\begin{document}
+
+\begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+\hline
+    Kratak opis & Organizator dodeljuje igračima specijalne pozivnice za turnir.\\ 
+\hline    
+    Učesnici & \begin{enumerate}
+        \item Organizator koji želi da dodeli specijalnu pozivnicu igračima.
+        \item Igrač koji prihvata specijalnu pozivnicu.
+    \end{enumerate}
+    \\
+\hline
+   Preduslovi & \begin{enumerate}
+       \item Sistem je u funkciji.
+   \end{enumerate}\\
+\hline  
+    Postuslovi & \begin{enumerate}
+        \item Igrač je dobio specijalnu pozivnicu.
+    \end{enumerate}\\
+\hline
+    Osnovni tok & \begin{enumerate}
+        \item Organizator se prijavljuje na sistem.
+        \item Organizator bira opicju za slanje specijalnih pozivnica.
+        \item Organizator bira igrača kome želi da pošalje specijalnu pozinicu.
+        \item Orgaizator šalje specijalnu pozivnicu klikom na dugme "Pošalji".
+        \item Sistem obaveštava organizatora da je specijalna pozivnica uspešno poslata.
+        \item Sistem šalje obaveštenje igrača o specijalnoj pozivnici putem e-maila i notifikacijom na početnoj stranici sistema.
+        \item Sistem zahteva od igrača da potvrdi dolazak u predviđenom vremenskom roku.
+        \item Igrač potvrđuje dolazak klikom na opciju "Potvrdi".
+        \item Sistem obaevštava igrača o uspešnoj potvrdi.
+        \item Sistem obaveštava organizatora da je igrač prihvatio specijalnu pozivnicu.
+        \item Sistem dodaje igrača u listu prijavljenih igrača za turnir sa oznakom specijalne pozivnice.
+        
+    \end{enumerate}\\
+\hline
+    Alternativni tokovi & \begin{enumerate}
+        \item [A8.1] \begin{enumerate}
+            \item Igrač odbija specijalnu pozivnicu.
+            \item Sistem obaveštava klub da je igrač odbio specijalnu pozivnicu.
+            \item Slučaj upotrebe se završava.
+        \end{enumerate} 
+        \item [A8.2] \begin{enumerate}
+            \item Igrač nije na vreme odgovorio na specijalnu pozivnicu.
+            \item Sistem obaveštava klub da je igraču istekao poziv.
+            \item Slučaj upotrebe se završava.
+        \end{enumerate} 
+    \end{enumerate}\\
+\hline
+    Podtokovi & /\\
+\hline
+    Specijalni zahtevi & /\\
+\hline
+    Dodatne informacije & / \\
+\hline
+ 
+\caption{Slanje specijalne pozivnice} 
+\end{longtable}
+
+\end{document}

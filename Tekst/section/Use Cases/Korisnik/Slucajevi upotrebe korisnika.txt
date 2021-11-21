@@ -5,5 +5,5 @@
 	3.1.4  Pristupa kalendaru turnira 
 	3.1.5  Može da vidi rang listu igrača
 	3.1.6  Može da vidi rezultate igrača 
-	3.1.7  Može da vidi obaveštenja od strane Teniskog Saveza 
-	3.1.8  Može da vidi javno dostupnu dokumentaciju Teniskog Saveza 
+	3.1.7  Vidi obaveštenja
+	3.1.8  Vidi javno dostupna dokumenta

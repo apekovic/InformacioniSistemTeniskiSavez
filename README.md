@@ -7,3 +7,7 @@ Preciznije, informacioni sistem pokriva sledeće nadležnosti Takmičarskog odbo
 * Brine se o izdavanju rang liste i verifikuje godišnju rang listu.
 * Stara se o sprovođenju postupka za registraciju tenisera i klubova.
 * Stara se o svim ostalim pitanjima vezanim za takmičenja na teritoriji RS.
+
+  
+ Objedinjeni projekat Informacionog sistema Teniski Savez može da se pogleda na Overleaf linku:  
+ https://www.overleaf.com/read/kvzwqbdckmrx

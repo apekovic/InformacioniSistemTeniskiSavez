@@ -1,0 +1,63 @@
+\documentclass{article}
+\usepackage{longtable}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\begin{document}
+\begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+\hline
+    Kratak opis & Administrator dodaje novog zaposlenog u Teniskom Savezu u sistem zbog evidencije o zaposlenima i opciono mu pravi nalog za korišćenje sistema.\\ 
+\hline    
+    Učesnici & \begin{enumerate}
+        \item Administrator koji prvi nalog na sistemu za zaposlenog.
+    \end{enumerate}
+    \\
+\hline
+   Preduslovi & \begin{enumerate}
+       \item Sistem je u funkciji.
+       \item Administratoru su pristigle sve potrebne informacije o zaposlenom.
+   \end{enumerate}\\
+\hline  
+    Postuslovi & \begin{enumerate}
+        \item Administrator je dodao zaposlenog u okviru TS u sistem i opciono mu napravio novi nalog na sistemu.
+        \item Baza je ažurirana.
+        
+    \end{enumerate}\\
+\hline
+    Osnovni tok  & \begin{enumerate}        
+        \item Administrator bira opciju "Dodaj novog zaposlenog".
+        \item Sistem otvara formu sa podacima za unošenje.
+        \item Administrator kreira e-mail adresu za zaposlenog.
+        \item Administrator dodaje podatke o zaposlenom.
+        \item Administrator potvr\dj uje.
+        \item Administrator bira opciju "Napravi nalog" i dodeljuje privremenu šifru koja će se kasnije menjati od strane zaposlenog.
+        \item Administrator potvr\dj uje kreiranje naloga.
+        \item Sistem evidentira nalog kao aktivan.
+    \end{enumerate}\\
+\hline
+    Alternativni tokovi & 
+    \begin{itemize}
+        \item [A6] Administrator može da preskoči ovaj korak i da Sistem samo ažurira bazu. 
+    \end{itemize}\\
+\hline
+    Podtokovi & /\\
+\hline
+    Specijalni zahtevi & /\\
+\hline
+    Dodatne informacije &
+    \begin{itemize}
+        \item Podaci o zaposlenom su:
+        \begin{itemize}
+            \item Ime
+            \item Prezime
+            \item E-mail u okviru Teniskog Saveza
+            \item Odsek
+            \item Ime nadređenog
+            \item Datum zaposlenja
+        \end{itemize} 
+        % \item Ako se kreira nalog zaposlenog u bazi će se ažurirati polje da ima nalog.
+    \end{itemize}\\
+\hline
+\caption{Administrator pravi nalog} 
+\end{longtable}
+
+\end{document}

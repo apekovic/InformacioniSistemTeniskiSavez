@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage{longtable}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\begin{document}
+\begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+\hline
+    Kratak opis & Administrator briše nalog i sve informacije vezane za zaposlenog koji više nije deo Teniskog Saveza.\\ 
+\hline    
+    Učesnici & \begin{enumerate}
+        \item Administrator koji briše nalog.
+    \end{enumerate}
+    \\
+\hline
+   Preduslovi & \begin{enumerate}
+       \item Sistem je u funkciji.
+       \item Administratoru ima informacije o zaposlenom kojeg želi da obriše.
+   \end{enumerate}\\
+\hline  
+    Postuslovi & \begin{enumerate}
+        \item Nalog je uklonjen iz sistema.
+        \item Baza je ažurirana .
+        
+    \end{enumerate}\\
+\hline
+    Osnovni tok & \begin{enumerate}
+        \item Administrator otvara stranicu sa spiskom svih zaposlenih.
+        \item Administrator pronalazi nalog na stranici.
+        \item Administrator bira opciju "Ukloni zaposlenog".
+        \item Sistem briše nalog kao i sve informacije koje sadrži.
+        \item Sistem obaveštava Administratora da je zaposleni uspešno uklonjen.
+    \end{enumerate}\\
+\hline
+    Alternativni tokovi & /\\
+\hline
+    Podtokovi & /\\
+\hline
+    Specijalni zahtevi & /\\
+\hline
+    Dodatne informacije & /\\
+\hline
+\caption{Administrator briše nalog za zaposlenog} 
+\end{longtable}
+
+\end{document}

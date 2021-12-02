@@ -1,0 +1,56 @@
+\documentclass{article}
+\usepackage{longtable}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\begin{document}
+    \begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+        \hline
+            Kratak opis & Korisnik podnosi zahtev za uvid u rang liste.\\ 
+        \hline    
+            Učesnici & Korisnik\\
+        \hline
+            Preduslovi & 
+                \begin{enumerate}
+                    \item Sistem je u funkciji.
+                \end{enumerate}\\
+        \hline  
+            Postuslovi & 
+                \begin{enumerate}
+                    \item Korisnik je dobio pregled rang listi.
+                \end{enumerate}\\
+        \hline
+            Osnovni tok & 
+                \begin{enumerate}
+                    \item Korisnik otvara stranicu Teniskog saveza i bira karticu "Rang liste".
+                    \item Sistem prikazuje opcije za filtriranje radi prikaza odgovarajuće rang liste.
+                    \item Korisnik filtrira po konkurenciji i polu, a opciono i po ostalim opcijama.
+                    \item Sistem prikazuje najviše prvih 100 igrača na globalnoj - državnoj rang listi i opciju da se pre\dj e na sledećih 100 (ako ih ima). 
+                    \item Sistem prikazuje rezultate na osnovu unetih podataka.
+                \end{enumerate}\\
+        \hline
+            Alternativni tokovi & \begin{itemize}
+                \item[A3] Ako se ne izaberu Pol i Konkurencija sistem izbacuje obaveštenje da nema rezultata.
+            \end{itemize}\\
+        \hline
+            Podtokovi & /\\
+        \hline
+            Specijalni zahtevi & /\\
+        \hline
+            Dodatne informacije & \begin{itemize}
+                \item[A2] Opcije za filtriranje su: 
+                \begin{enumerate}
+                    \item \textbf{Pol}
+                    \item \textbf{Konkurencija}
+                    \item Klub
+                    \item Godina
+                    \item Ime (moguće je izbacivanje ponu\dj enih opcija na osnovu prvih slova)
+                    \item Prezime (moguće je izbacivanje ponu\dj enih opcija na osnovu prvih slova)
+                \end{enumerate}
+                \item Ponu\dj ene opcije za filtriranje su samo one koje postoje u bazi. Npr. ne može se pretražiti rang lista igrača po Klubu koji ne postoji u sistemu.
+                \item Obavezno za pretragu je da se navedu Pol i Konkurencija. Godina ako se ne navede, podrazumevano je tekuća godina.
+            \end{itemize}\\
+        \hline
+        \caption{Uvid u rang listu}
+    \end{longtable}
+\end{document}

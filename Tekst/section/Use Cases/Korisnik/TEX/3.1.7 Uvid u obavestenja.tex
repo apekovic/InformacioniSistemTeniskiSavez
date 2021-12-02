@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{longtable}
+
+\begin{document}
+        \begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+            \hline
+                Kratak opis & Korisnik želi da vidi obaveštenja od strane Teniskog Saveza.\\ 
+            \hline    
+                Učesnici & Korisnik koji želi da vidi obaveštenja. \\
+            \hline
+               Preduslovi &  Sistem je u funkciji.\\
+            \hline  
+                Postuslovi &  Korisnik je pristupio obaveštenjima\\
+            \hline
+                Osnovni tok & \begin{enumerate}
+                    \item Korisnik ulazi na formu sa obaveštenjima.
+                    \item Sistem prikazuje listu obaveštenja, pri čemu svakom obaveštenju može zasebno da se pristupi za čitanje celog sadržaja.
+                    \item Korisnik bira obaveštenje i pritiska na deo "Prikaži više".
+                    \item Sistem otvara prozor sa svim detaljima o obaveštenju.
+                \end{enumerate}\\
+            \hline
+                Alternativni tokovi & \begin{itemize}
+                    \item[A4] Korisnik može da bira da ide nazad i time se vraća na korak 2.
+                \end{itemize}\\
+            \hline
+                Podtokovi & /\\
+            \hline
+                Specijalni zahtevi & /\\
+            \hline
+                Dodatne informacije & Uvid u obaveštenja je blog stranica koju mogu videti registrovani i neregistrovani korisnici radi širenja informacija široj javnosti o dešavanjima / odlaganjima / novim nabavkama / sponzorstvima, jer je rad Teniskog Saveza javan.\\
+            \hline
+            \caption{Korisnik želi da pristupi obaveštenjima} 
+        \end{longtable}
+\end{document}

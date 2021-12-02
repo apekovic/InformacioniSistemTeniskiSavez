@@ -1,6 +1,7 @@
 3.6 Administrator
-	3.6.1  Kreira nalog zaposlenima u Teniskom Savezu
-	3.6.2  Briše nalog zaposlenog 
-	3.6.3  Dodaje novu medicinsku ustanovu
-	3.6.4  Uklanja medicinsku ustanovu
-	3.6.5  Ažurira podatke o medicinskoj ustanovi
+	3.6.1  Kreiranje naloga zaposlenom
+	3.6.2  Brisanje naloga zaposlenom 
+	3.6.3  Dodavanje nove medicinske ustanove
+	3.6.4  Uklanjanje medicinske ustanove
+	3.6.5  Ažuriranje podataka o medicinskoj ustanovi
+	3.6.3  Validiranje kalendara turnira

@@ -1,6 +1,5 @@
 3.2 Igrač:
-	3.2.1  Obnavlja članarinu
-	3.2.2  Prijavljuje se na turnir
-	3.2.3  Odjavljuje se sa turnira 
-	3.2.4  Vidi svoje prijavljene turnire
-	3.2.5  Menja svoje podatke
+	3.2.1  Obnavljanje članarine
+	3.2.2  Prijavljivanje na turnir
+	3.2.3  Odjavljivanje sa turnira 
+	3.2.4  Promena podataka

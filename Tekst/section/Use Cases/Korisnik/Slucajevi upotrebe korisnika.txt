@@ -1,9 +1,8 @@
 3.1  Korisnik:
-	3.1.1  Registruje se kao igrač
-	3.1.2  Registruje se kao klub
-	3.1.3  Zakazuje sportski pregled 
-	3.1.4  Pristupa kalendaru turnira 
-	3.1.5  Može da vidi rang listu igrača
-	3.1.6  Može da vidi rezultate igrača 
-	3.1.7  Vidi obaveštenja
-	3.1.8  Vidi javno dostupna dokumenta
+	3.1.1  Registracija igrača
+	3.1.2  Registracija kluba	
+	3.1.3  Zakazivanje sportskog pregleda
+	3.1.4  Pristupanje kalendaru turnira 
+	3.1.5  Uvid u rang listu
+	3.1.6  Uvid u rezultate igrača 
+	3.1.7  Uvid u obaveštenja

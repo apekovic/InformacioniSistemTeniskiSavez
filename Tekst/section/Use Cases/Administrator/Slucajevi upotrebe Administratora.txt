@@ -4,4 +4,4 @@
 	3.6.3  Dodavanje nove medicinske ustanove
 	3.6.4  Uklanjanje medicinske ustanove
 	3.6.5  Ažuriranje podataka o medicinskoj ustanovi
-	3.6.3  Validiranje kalendara turnira
+	3.6.6  Validiranje kalendara turnira

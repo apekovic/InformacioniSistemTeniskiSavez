@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{longtable}
+
+\begin{document}
+    \begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+        \hline
+            Kratak opis & Administrator validira kalendar turnira.\\ 
+        \hline    
+            U\v{c}esnici & Administrator\\
+        \hline
+            Preduslovi & 
+                \begin{enumerate}
+                    \item Sistem je u funkciji.
+                    \item Administrator je dobio mail sa zahtevom za validiranje kalendara turnira od sistema.
+                    \item Administrator je dobio kalendar turnira od Teniskog saveza.
+                \end{enumerate}\\
+        \hline  
+            Postuslovi & 
+                \begin{enumerate}
+                    \item Objavljen je raspored turnira.
+                    \item Baza je ažurirana.
+                \end{enumerate}\\
+        \hline
+            Osnovni tok & 
+                \begin{enumerate}
+                    \item Administrator poredi dokumente koje je dobio.
+                    \item Administrator šalje poruku sistemu da je sve validno.
+                    \item Sistem obajavljuje kalendar turnira.
+                \end{enumerate}\\
+        \hline
+            Alternativni tokovi & 
+                \begin{enumerate}
+                    \item[A1] Ukoliko podaci nisu validni, tj. ne poklapaju se, administrator šalje poruku sistemu da podaci nisu validni. Proces se završava. 
+                \end{enumerate}\\
+        \hline
+            Podtokovi & /\\
+        \hline
+            Specijalni zahtevi & /\\
+        \hline
+            Dodatne informacije & /\\
+        \hline    
+        \caption{Odabir organizatora turnira}
+    \end{longtable}
+\end{document}

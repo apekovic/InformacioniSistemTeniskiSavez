@@ -3,3 +3,4 @@
 	3.2.2  Prijavljivanje na turnir
 	3.2.3  Odjavljivanje sa turnira 
 	3.2.4  Promena podataka
+	3.2.5  Primanje specijalne pozivnice

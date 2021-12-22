@@ -4,44 +4,48 @@
 \usepackage{longtable}
 
 \begin{document}
-
-        \begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
-            \hline
-                Kratak opis & Igrač podnosi zahtev za promenu ličnih podataka.\\ 
-            \hline    
-                Učesnici & Igrač  \\
-            \hline
-               Preduslovi & \begin{enumerate}
+    \begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+        \hline
+            Kratak opis & Igrač podnosi zahtev za promenu ličnih podataka.\\ 
+        \hline    
+            Učesnici & Igrač  \\
+        \hline
+            Preduslovi & 
+                \begin{enumerate}
                    \item Sistem je u funkciji.
                    \item Igrač je registrovan.
                \end{enumerate}\\
-            \hline  
-                Postuslovi & \begin{enumerate}
-                    \item Igrač je uspesno promenio podatke.
-                    \item Baza je azurirana.
+        \hline  
+            Postuslovi & 
+                \begin{enumerate}
+                    \item Igrač je uspešno promenio podatke.
+                    \item Baza je ažurirana.
                 \end{enumerate}\\
-            \hline
-                Osnovni tok & \begin{enumerate}
+        \hline
+            Osnovni tok & 
+                \begin{enumerate}
                     \item Igrač otvara na sistemu formu sa detaljima o nalogu i ulazi na formu za izmenu podataka.
+                    \item Sistem prikazuje formu.
                     \item Igrač menja odgovarajuća polja.
-                    \item Igrač potvr\dj uje promenu.
+                    \item Igrač potvrđuje promenu.
                     \item Sistem ažurira podatke.
-                    \item Sistem prikazuje poruku 'Uspešno ste promenili podatke'.
+                    \item Sistem prikazuje poruku "Uspešno ste promenili podatke".
                 \end{enumerate}\\
-            \hline
-                Alternativni tokovi & \begin{itemize}
-                    \item[A3] Igrač može da odustane pritiskom na dugme "Odustani" ili da ne potvrdi izmenu, čime se izmena ne izvršava.
+        \hline
+            Alternativni tokovi & 
+                \begin{itemize}
+                    \item[A4] Igrač može da odustane pritiskom na dugme "Nazad" ili da ne potvrdi izmenu, čime se izmena ne izvršava.
                 \end{itemize}\\
-            \hline
-                Podtokovi & /\\
-            \hline
-                Specijalni zahtevi &/\\
-            \hline
-                Dodatne informacije & \begin{itemize}
-                    \item Lični podaci koji se mogu promeniti su ime, prezime, e-mail, adresa i broj telefona. Izmena kluba nije moguća bez ponovne registracije.
+        \hline
+            Podtokovi & /\\
+        \hline
+            Specijalni zahtevi &/\\
+        \hline
+            Dodatne informacije & 
+                \begin{itemize}
+                    \item Lični podaci koji se mogu promeniti su ime, prezime, e-mail, adresa, poštanski broj, grad i broj telefona. Izmena kluba nije moguća bez ponovne registracije.
                 \end{itemize} \\
-            \hline
-            \caption{Promena podataka} 
-        \end{longtable}
-
+        \hline
+        \caption{Promena podataka} 
+    \end{longtable}
 \end{document}

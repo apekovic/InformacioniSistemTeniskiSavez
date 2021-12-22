@@ -1,5 +1,8 @@
 3.5  Teniski Savez:
-	3.5.1  Objavljuje bitna dokumenta za registraciju
-	3.5.2  Kači raspored turnira za celu godinu
-	3.5.3  Kači obaveštenja
-	3.5.4  Kači javno dostupna dokumenta
+	3.5.1  Objavljivanje bitnih dokumenata za registraciju
+	3.5.2  Objavljivanje rasporeda turnira za celu godinu
+	3.5.3  Objavljivanje obaveštenja
+	3.5.4  Objavljivanje javno dostupnih dokumenata
+	3.5.5  Razmatranje odlaganja turnira
+	3.5.6  Razmatranje odustajanja organizatora od turnira
+	3.5.7  Razmatranje registracije

@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{longtable}
+
+\begin{document}
+        \begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+            \hline
+                Kratak opis & Neregistrovani korisnik se prijavljuje za sportski/medicinski pregled.\\ 
+            \hline    
+                Učesnici & \begin{enumerate}
+                    \item Neregistrovani korisnik koji se prijavljuje za pregled.
+                    \item Igrač koji se prijavljuje na pregled.
+                \end{enumerate}
+                (Igrač može da se prijavi, ali on je specijalizacija neregistrovanog korisnika, pa se sa neregistrovanim korisnikom nastavlja u daljem tekstu). \\
+            \hline
+               Preduslovi & 
+               \begin{enumerate}
+                    \item Sistem je u funkciji.
+                    \item Prilikom registracije igrača, na pitanje "Da li je obavljen sporski pregled?" je odgovoreno sa "Ne".
+               \end{enumerate}\\
+            \hline  
+                Postuslovi & \begin{enumerate}
+                    \item Zakazan je sportski pregled.
+                \end{enumerate}\\
+            \hline
+                Osnovni tok & \begin{enumerate}
+                    \item Sistem otvara formu sa svim medicinskim ustanovama i filterima po gradu.
+                    \item Neregistrovani korisnik filtrira po gradu.
+                    \item Sistem prikazuje filtrirane medicinske ustanove.
+                    \item Neregistrovani korisnik bira bira medicinsku ustanovu, tj. ulazi na njen kalendar.
+                    \item Neregistrovani korisnik na kalendaru medicinske ustanove bira odgovarajući termin.
+                    \item Neregistrovani korisnik popunjava svoje podatke: ime, prezime, datum ro\dj enja, klub, e-mail i (ako je već registrovan) broj takmičarske legitimacije.
+                    \item Neregistrovani korisnik potvr\dj uje. 
+                \end{enumerate}\\
+            \hline
+                Alternativni tokovi & \begin{itemize}
+                    \item[A2] Neregistrovani korisnik ako ne filtrira po gradu prelazi na korak 4.
+                    \item[A3] Sistem ako ne na\dj e nijednu ustanovu po datom filteru, ostaje na prikazu svih Medicinskih ustanova sa obaveštenjem da rezultat filtriranja ne postoji.
+                    \item[A7] Neregistrovani korisnik može da odustane i time neuspešno završava zakazivanje pregleda. Može i da greškom proba da zakaže par sekundi posle nekoga i da termin ne bude dostupan, pa da ponovi Korak 2.
+                \end{itemize}\\
+            \hline
+                Podtokovi & /\\
+            \hline
+                Specijalni zahtevi & Neregistrovani korisnik mora da ima e-mail adresu.\\
+            \hline
+                Dodatne informacije & \begin{itemize}
+                    \item Mail adrese medicinskih ustanova se uzimaju iz baze svih medicinskih ustanova koje su licencirane za preglede igrača u okviru Teniskog Saveza.
+                    \item Kalendar može biti nešto poput google kalendara koji je anonimizovan. Zakazivanje ne utiče na sistem i može se odraditi ili ne, ali dalji koraci zavise da li je uspešno završen pregled.
+                \end{itemize} \\
+            \hline
+            \caption{Neregistrovani korisnik zakazuje sportski pregled}
+            \end{longtable}       
+
+\end{document}

@@ -1,0 +1,47 @@
+\documentclass{article}
+\usepackage{longtable}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\begin{document}
+\begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+\hline
+    Kratak opis & Klub aplicira za organizaciju turnira.\\ 
+\hline    
+    Učesnici & \begin{enumerate}
+        \item Klub koji želi da organizuje takmičenje.
+    \end{enumerate}
+    \\
+\hline
+   Preduslovi & \begin{enumerate}
+       \item Sistem je u funkciji.
+       \item Klub je registrovan.
+       \item Postoji kalendar turnira.
+   \end{enumerate}\\
+\hline  
+    Postuslovi & \begin{enumerate}
+        \item Klub je uspešno aplicirao za organizatora.
+    \end{enumerate}\\
+\hline
+    Osnovni tok & \begin{enumerate}
+        \item Klub otvara kalendar turnira.
+        \item Klub bira turnir koji želi da organizuje iz već postojaće liste turnira.
+        \item Klub potvrđuje apliciranje klikom na dugme potvrdi. 
+        \item Sistem vrši proveru podataka o klubu iz baze.
+        \item Sistem odobrava prijavu i dodaje klub u spisak prijavljenih klubova za organizaciju turnira.
+        \item Sistem obaveštava klub da je prijava uspela i o roku za dobijanje potvrde da li je dobio pravo na organizaciju turnira.
+    \end{enumerate}\\
+\hline
+    Alternativni tokovi & \begin{itemize}
+        \item[A5] Prijava nije uspela: klub dobija poruku o razlogu odbija. Proces se završava.
+    \end{itemize}\\
+\hline
+    Podtokovi & /\\
+\hline
+    Specijalni zahtevi & /\\
+\hline
+    Dodatne informacije & / \\
+\hline 
+\caption{Klub aplicira za mogućnost organizovanja turnira} 
+\end{longtable}
+
+\end{document}

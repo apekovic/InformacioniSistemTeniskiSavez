@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{longtable}
+\usepackage{hyperref}
+
+\begin{document}
+
+       \begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+            \hline
+                Kratak opis & Igrač / Klub je nakon podnošenja zahteva za registraciju u okviru Teniskog saveza u procesu čekanja odobrenja ili odbijanja registracije. Nakon odobrenja izvršava završne korake za potvrdu registracije.\\ 
+            \hline    
+                Učesnici & \begin{enumerate}
+                    \item Igrač koji čeka potvrdu o registraciji. 
+                    \item Klub koji čeka potvrdu o registraciji. 
+                \end{enumerate}
+                U daljem tekstu biće zajednički nazvani "Korisnik".\\
+            \hline
+               Preduslovi & \begin{enumerate}
+                   \item Sistem je u funkciji.
+                   \item Tehničko osoblje je odobrilo korisniku registraciju.
+               \end{enumerate}\\
+            \hline  
+                Postuslovi & \begin{enumerate}
+                    \item Korisnik je uspešno registrovan.
+                    \item Baza podataka je ažurirana.
+                \end{enumerate}\\
+            \hline
+                Osnovni tok & \begin{enumerate}
+                            \item Sistem šalje korisniku E-mail sa linkom (vremenski ograničenim) privremenog naloga koji mora da se popuni podacima za registraciju (E-mail i lozinka) i potvrdi. Takođe dugme "Pošalji ponovo" u slučaju da link istekne.
+                            \item Korisnik popunjava podatke (E-mail, Lozinka) i potvr\dj uje popunjavanje forme.
+                            \item Sistem evidentira nalog kao aktivan.
+                \end{enumerate}\\
+            \hline
+                Alternativni tokovi & \begin{enumerate}
+                    \item[A2] Ako prodje 6 meseci a da nalog nije aktiviran, registracija je neuspešna i cela procedura mora da se započne ispočetka. 
+                    \item[A2] Ako istekne link, pritiskon na dugme "Pošalji ponovo" se vraća na korak 1.
+                \end{enumerate}\\
+            \hline
+                Podtokovi & /\\
+            \hline
+                Specijalni zahtevi & /\\
+            \hline
+                Dodatne informacije & / \\
+            \hline
+            \caption{Igrač / Klub potvrdjuje registraciju}
+        \end{longtable}
+\end{document}

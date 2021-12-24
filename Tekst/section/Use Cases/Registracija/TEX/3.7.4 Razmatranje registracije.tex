@@ -1,0 +1,51 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{longtable}
+\usepackage{hyperref}
+
+\begin{document}
+
+       \begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+            \hline
+                Kratak opis & Nakon što je korisnik sistema odlučio da se registruje (ili produži registraciju) i podnese zahtev, Tehničko osoblje je dobilo zadatak da proveri dokumentaciju koja mu je dostavljena kao i da proveri uplate da li su izvršene. Ako je sve kako treba, dokumentacija se arhivira i Tehničko osoblje dostavlja svoj odgovor.\\ 
+            \hline    
+                Učesnici & Tehničko osoblje koje validira podatke. \\
+            \hline
+               Preduslovi & \begin{enumerate}
+                   \item Sistem je u funkciji.
+                   \item Tehničko osoblje je primilo zahtev za registraciju (ili produženje registracije) od strane korisnika sistema.
+               \end{enumerate}\\
+            \hline  
+                Postuslovi & \begin{enumerate}
+                    \item Neregistrovani korisnik je uspešno registrovan kao igrač ili klub, ili je igraču / klubu produžena registracija.
+                    \item Baza podataka je ažurirana.
+                    \item Dokumenta su dostavljena u arhivu.
+                \end{enumerate}\\
+            \hline
+                Osnovni tok & 
+                \begin{enumerate}
+                    \item Sistem šalje tehničkom osoblju poruku o zahtevu za registraciju ili produžetak registracije.
+                    \item Tehničko osoblje bira da otvari listu zahteva za registraciju.
+                    \item Sistem otvara stranicu sa listom svih zahteva za registraciju.
+                    \item Tehničko osoblje otvara poruku o zahtevu i preuzima podatke. 
+                    \item Tehničko osoblje otvara sve poruke iz liste zahteva dok se svi zahtevi ne pregledaju.
+                    \item Teniski proverava sa službom za finansije da li su uplate legle i proverava da li je sva dokumetacija uredno dostavljena i sa dobrim podacima.
+                    \item Za svaku završenu proveru, Tehničko osoblje se vraća na listu zahteva, nalazi taj zahtev i pritiska dugme "Odobrena".
+                    \item Sistem šalje odgovor korisniku sistema koji je podneo zahtev i baza se ažurira podacima o registrovanom korisniku ili se registrovanom korisniku ažurira status aktivnosti naloga i dokumenta se čuvaju u arhivi. 
+                \end{enumerate}\\
+            \hline
+                Alternativni tokovi & 
+                \begin{enumerate}
+                    \item[A7] Ako prodje podaci nisu validni, Tehničko osoblje pritiska dugme "Nije odobrena", dokumenta se ne čuvaju u arhivi i šalje se odgovor da registracija nije uspešna ili da nije produžena. Slučaj upotrebe se završava.
+                \end{enumerate}\\
+            \hline
+                Podtokovi & /\\
+            \hline
+                Specijalni zahtevi & /\\
+            \hline
+                Dodatne informacije & / \\
+            \hline
+            \caption{Tehničko osoblje razmatra zahtev za registraciju ili produžetak registracije}
+        \end{longtable}
+\end{document}

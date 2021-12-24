@@ -1,0 +1,52 @@
+\documentclass{article}
+\usepackage{longtable}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\begin{document}
+
+\begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+\hline
+    Kratak opis & Klub istupa iz Tensiki Savez.\\ 
+\hline    
+    Učesnici & \begin{enumerate}
+        \item Registrovani klub koji želi da istupi iz Teniski Savez.
+    \end{enumerate}
+         
+    \\
+\hline
+   Preduslovi & \begin{enumerate}
+       \item Klub je član Teniskog Saveza.
+   \end{enumerate}\\
+\hline  
+    Postuslovi & \begin{enumerate}
+        \item Klub nije član Teniskog saveza.
+        \item Baza podataka je ažurirana.
+    \end{enumerate}\\
+\hline
+    Osnovni tok & \begin{enumerate}
+        \item Klub bira opciju za izlazak iz Teniskog Saveza.
+        \item Sistem traži od korisnika da unese šifru.
+        \item Klub unosi šifru i potvrđuje unos.
+        \item Sistem validira unetu šifru.
+        \item Sistem obaveštava klub da više nije član Teniskog Saveza.
+    \end{enumerate}
+    \\
+
+\hline
+    Podtokovi &  /\\
+  \hline  
+    Alternativni tokovi & \begin{enumerate}
+            \item[A4] Korisnik je uneo pogrešnu šifru: Sistem obaveštava korisnika da šifra nije validna. Slučaj se nastavlja na koraku 2.
+        \end{enumerate}\\
+
+
+\hline
+    Specijalni zahtevi & /\\
+\hline
+    Dodatne informacije & /\\
+\hline
+  
+\caption{Istupanje kluba iz TSS} 
+
+\end{longtable}
+\end{document}

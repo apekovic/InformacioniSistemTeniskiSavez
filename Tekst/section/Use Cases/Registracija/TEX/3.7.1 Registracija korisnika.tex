@@ -1,0 +1,123 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{longtable}
+
+\begin{document}
+        \begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+            \hline
+                Kratak opis & Neregistrovani korisnik vrši registraciju. Može da se registruje kao igrač tako što treba da zakaže sportski/medicinski pregled, pošalje sva neophodna dokumenta pečatirana, sliku, dokaz o uplati članarine i ostavi lične podatke. Može da se registruje kao klub tako što treba pošalje sva neophodna dokumenta pečatirana, dokaz o uplati članarina i ostavi podatke o klubu.\\ 
+            \hline    
+                Učesnici & \begin{itemize}
+                    \item Neregistrovani korisnik koji se registruje.
+                \end{itemize} \\
+            \hline
+               Preduslovi & \begin{enumerate}
+                   \item Sistem je u funkciji.
+               \end{enumerate}\\
+            \hline  
+                Postuslovi & \begin{enumerate}
+                    \item Neregistrovani korisnik je uspešno podneo zahtev za registraciju.
+                    \item Teniski savez je primio zahtev za registraciju na razmatranje.
+                \end{enumerate}\\
+            \hline
+                Osnovni tok & \begin{enumerate}
+                    \item Neregistrovani korisnik otvara formu za registraciju.
+                    \item Sistem izbacuje formu sa opcijama tipa člana za registraciju, kao i opciju da se vide svi detalji o registraciji.
+                    \item Ako Neregistrovani korisnik bira tip "Igrač":
+                        \begin{enumerate}
+                            \item[3.1] Sistem izbacuje formu sa pitanjem "Da li je obavljen medicinski pregled?" i dugmiće sa odgovorima "Da" i "Ne".
+                            \item[3.2] Ako neregistrovani korisnik izabere odgovor "Ne":
+                            \begin{enumerate}
+                                \item[3.2.1] Neregistrovani korisnik dobija od sistema formu sa pitanjem "Da li želite da zakažete pregled?".
+                                \item[3.2.2] Neregistrovani korisnik odgovara sa "Da".
+                                \item[3.2.3] Prelazi se na slučaj upotrebe 3.7.3 Zakazuje medicinski pregled.
+
+                            \end{enumerate}
+                            \item[3.3] Ako neregistrovani korisnik izabere odgovor "Da":
+                            \begin{enumerate}
+                                \item[3.3.1] Sistem prikazuje nov prozor sa poljima za popunjavanje, čekiranje, kao i 5 opcija za kačenje fajlova:
+                                \begin{itemize}
+                                    \item "Potvrda o uplati" da se doda prilog koji sadrži potvrdu o uplati za izradu legitimacije.
+                                    \item "Potvrda o članstvu u klubu" da se doda dokument sa podacima o igraču i klubu za koji igra, koji je pečatiran.
+                                    \item "Slika" da se doda mala slika koja će biti na takmičarskoj legitimaciji.
+                                    \item "Kopija izvoda iz matične knjige".
+                                    \item "Dokument o obavljenom pregledu".
+                                \end{itemize}  
+                            \end{enumerate}
+                        \end{enumerate}
+                \end{enumerate}\\
+            \hline
+                Osnovni tok nastavak & \begin{enumerate}
+                    \item[4] Ako neregistrovani korisnik bira tip "Klub":
+                        \begin{enumerate}
+                            \item[4.1] Sistem prikazuje nov prozor sa poljima za popunjavanje, čekiranje, kao i 4 opcije za kačenje fajlova:
+                                \begin{itemize}
+                                    \item "Rešenje o osnivanju".
+                                    \item "Potvrda o registraciji u Ministarstvu Finansija".
+                                    \item "Potvrda o uplati za upis novog kluba".
+                                    \item "Potvrda o uplati za godišnju članarinu".
+                                \end{itemize}  
+                        \end{enumerate}
+                    \item[5] Korisink popunjava polja i dodaje priloge.
+                    \item[6] Neregistrovani korisnik potvr\dj uje izmene.
+                    \item[7] Sistem šalje Teniskom savezu obaveštenje o prispelom zahtevu za članstvo radi verifikacije podataka.
+                 \end{enumerate}\\
+            \hline
+                Alternativni tokovi & 
+                \begin{itemize}
+
+                    \item[A3.2] Neregistrovani korisnik je odgovorio sa "Ne" i zakazivanje se završava sa obaveštenjem "Registracija Igrača se može završiti tek nakon obavljenog pregleda.".
+                    \item[A6] 
+                        \begin{enumerate}
+                            \item Ako neregistrovani korisnik ne potvrdi, registracija se neuspešno završava.
+                            \item Ako se ne popune obavezna polja i ne dodaju sva dokumenta, sistem izbacuje obaveštenje da polja moraju biti popunjena, kao i da moraju sva dokumenta da se prilože. Sistem nas vraća na formu za popunjavanje podataka.
+                        \end{enumerate}
+                \end{itemize}\\
+            \hline
+                Podtokovi & /\\
+            \hline
+                Specijalni zahtevi & Neregistrovani korisnik mora da ima e-mail adresu.\\
+            \hline 
+                Dodatne informacije &  \begin{itemize} 
+                \item U koraku 3.3.1 polja su: 
+                    \begin{itemize}
+                        \item Ime
+                        \item Prezime
+                        \item JMBG
+                        \item Datum ro\dj enja
+                        \item Telefon
+                        \item Adresa
+                        \item Poštanski broj
+                        \item Grad 
+                        \item E-mail
+                        \item Lozinka i Potvrda lozinke
+                        \item Kvadratić "Dvojno državljanstvo" da obeleži ako je odgovor "Da".
+                        \item Region (Padajući meni)
+                        \item Klub (Padajući meni na osnovu izabranog Grada ili Regiona)
+                    \end{itemize}
+            \end{itemize}
+            \begin{itemize} 
+                \item U koraku 4.1 polja su: 
+                    \begin{itemize}
+                        \item Ime kluba
+                        \item Kontakt telefon
+                        \item Adresa
+                        \item Poštanski broj
+                        \item Grad 
+                        \item Broj terena
+                        \item Broj svlačionica
+                        \item E-mail
+                        \item Lozinka i Potvrda lozinke
+                        \item Kvadratić "Kafić" da obeleži ako u okviru kluba postoji.
+                        \item Kvadratić "Restoran" da obeleži ako u okviru kluba postoji.
+                        \item Region (Padajući meni)
+                    \end{itemize}
+                \item Neobavezna polja su "Dvojno državljanstvo" za igrača, a "Klub" i "Restoran". 
+                \item Nakon koraka 3.2.3 se proces završava i registracija se posle toga mora početi ispočetka. 
+            \end{itemize}\\
+        \hline
+        \caption{Neregistrovani korisnik se registruje kao igrač ili klub} 
+        \end{longtable}
+
+\end{document}

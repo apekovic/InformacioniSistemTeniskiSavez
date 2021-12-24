@@ -1,0 +1,75 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{longtable}
+\usepackage{hyperref}
+
+\begin{document}
+
+       \begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+            \hline
+                Kratak opis & Igrač / Klub želi da produži svoje članstvo u savezu, tj produži svoju registraciju. Igrač to čini novim uspešnim obavljanjem sportskog/medicinskog pregleda, dostavljanjem svih neophodnih dokumenata, slike i dokaza o uplaćenoj članarini. Klub to čini dostavljanjem dokaza o uplaćenoj članarini.\\ 
+            \hline    
+                Učesnici & \begin{itemize}
+                    \item Igrač koji želi da obnovi članarinu/registraciju u okviru Teniskog saveza.
+                    \item Klub koji želi da obnovi članarinu/registraciju u okviru Teniskog saveza.
+                \end{itemize}
+                U daljem tekstu biće zajednički nazvani "Korisnik" sem u delovima gde se slučaj upotrebe razlikuje za ta dva aktera u sistemu.\\
+            \hline
+               Preduslovi & \begin{enumerate}
+                   \item Sistem je u funkciji.
+                   \item Korisnik postoji u sistemu.
+               \end{enumerate}\\
+            \hline  
+                Postuslovi & \begin{enumerate}
+                    \item Korisnik je poslao zahtev tehničkom osoblju za produžetak registracije.
+                \end{enumerate}\\
+            \hline
+                Osnovni tok & \begin{enumerate}
+                    \item Korisnik otvara na sistemu formu sa detaljima o nalogu i ulazi na formu za produžavanje važenja naloga.
+                    \item Ako je korisnik igrač:
+                    \begin{enumerate}
+                         \item[2.1] Sistem izbacuje formu sa pitanjem "Da li je obavljen medicinski pregled?" i dugmiće sa odgovorima "Da" i "Ne".
+                        \item[2.2] Ako korisnik izabere odgovor "Ne":
+                        \begin{enumerate}
+                            \item[2.2.1] Korisnik dobija od sistema formu sa pitanjem "Da li želite da zakažete pregled?".
+                            \item[2.2.2] Korisnik odgovara sa "Da".
+                            \item[2.2.3] Prelazi se na slučaj upotrebe 3.7.3 Zakazuje medicinski pregled.
+                        \end{enumerate}
+                        \item[2.3] Ako korisnik izabere odgovor "Da":
+                        \begin{itemize}
+                            \item[2.3.1] Sistem prikazuje nov prozor sa poljima za popunjavanje, čekiranje, kao i četiri opcije za kačenje fajlova:
+                            \begin{itemize}
+                                \item "Potvrda o uplati" da se doda prilog koji sadrži potvrdu o uplati za izradu legitimacije.
+                                \item "Potvrda o članstvu u klubu" da se doda dokument sa podacima o igraču i klubu za koji igra, koji je pečatiran.
+                                \item "Slika" da se doda mala slika koja će biti na takmičarskoj legitimaciji.
+                                \item "Dokument o obavljenom pregledu".
+                            \end{itemize}  
+                        \end{itemize}  
+                    \end{enumerate}
+                    \item Ako je korisnik klub:
+                    \begin{enumerate}
+                        \item[3.1] Sistem prikazuje nov prozor sa poljima za popunjavanje, čekiranje, kao i četiri opcije za kačenje fajlova:
+                    \end{enumerate}                   
+                    \item Korisnik dodaje sve što je neophodno od dokumenata i podataka.
+                    \item Korisnik potvr\dj uje izmene.
+                    \item Sistem šalje tehničkom osoblju obaveštenje o prispelom zahtevu za članstvo radi verifikacije podataka.
+                \end{enumerate}\\
+            \hline
+                Alternativni tokovi & 
+                \begin{itemize}
+                    \item[A2.2] Igrač je odgovorio sa "Ne" i zakazivanje se završava sa obaveštenjem "Registracija Igrača se može završiti tek nakon obavljenog pregleda.".
+                    \item[A4] Ako nije dodato sve što se zahteva, sistem izbacuje obaveštenje da moraju svi dokumenti da se prilože i vraća se nazad na korak 1.
+                    \item[A5] Ako korisnik odustane, registracija se neuspešno završava.
+                \end{itemize}\\
+            \hline
+                Podtokovi & /\\
+            \hline
+                Specijalni zahtevi & /\\
+            \hline
+                Dodatne informacije & Nakon koraka 2.2.3 se proces završava i registracija se posle toga mora početi ispočetka. \\
+            \hline
+            \caption{Igrač / Klub obnavlja registraciju/članarinu}
+        \end{longtable}
+        
+\end{document}

@@ -6,14 +6,14 @@
 \begin{document}
  \begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
             \hline
-                Kratak opis & Teniski savez razmatra odlaganje turnira. \\ 
+                Kratak opis & Tehničko osoblje razmatra odustajanje organizatora od turnira. \\ 
             \hline    
-                Učesnici & Teniski savez.\\
+                Učesnici & Tehničko osoblje.\\
             \hline
                Preduslovi & \begin{enumerate}
                    \item Sistem je u funkciji.
-                   \item Teniski savez je prijavljen na sistem. 
-                   \item Teniski savez je primio mail sa molbom za odlaganje turnira od strane organizatora.
+                   \item Tehničko osoblje je prijavljen na sistem. 
+                   \item Tehničko osoblje je primio mail sa molbom za odustajanje od turnira.
                 \end{enumerate}\\
             \hline  
                 Postuslovi & \begin{enumerate}
@@ -22,18 +22,18 @@
                 \end{enumerate}\\
             \hline
                 Osnovni tok & \begin{enumerate}
-                    \item Teniski savez ulazi na stranicu "Objavi raspored turnira".
+                    \item Tehničko osoblje ulazi na stranicu "Organizacija turnira".
                     \item Sistem otvara stranicu.
-                    \item Teniski savez razmatra da li odlaganje turnira dovodi do preklapanja turnira.
-                    \item Teniski savez bira opciju "Ažuriraj podatke".
-                    \item Teniski savez menja kalendar turnira.
-                    \item Teniski savez potvrđuje izmenu.
+                    \item Tehničko osoblje razmatra navedeni razlog za odustajanje.
+                    \item Tehničko osoblje klikće na "Prihvati odustajanje".
+                    \item Tehničko osoblje menja kalendar turnira.
+                    \item Tehničko osoblje potvrđuje izmenu.
                     \item Sistem je objavio novu izmenu.
                 \end{enumerate}\\
             \hline
                 Alternativni tokovi & 
                 \begin{itemize}
-                    \item[A3] Ukoliko odlaganje dovodi do preklapanja turnira, odustaje se od odlaganja.
+                    \item[A3] Ukoliko razlog nije opravdan, Tehničko osoblje popunjava razlog za odbijanje i klikće na dugme "Odbij odustajanje".
                 \end{itemize}\\
             \hline
                 Podtokovi & /\\
@@ -42,7 +42,7 @@
             \hline
                 Dodatne informacije & /\\
             \hline
-            \caption{Razmatranje odlaganja turnira}
+            \caption{Razmatranje odustajanja organizatora od turnira}
         \end{longtable}
 
 \end{document}

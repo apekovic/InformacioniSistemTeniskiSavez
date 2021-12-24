@@ -1,0 +1,8 @@
+Neregistrovani korisnik:
+	3.7.1  Registracija korisnika
+	3.7.2  Zakazivanje sportskog pregleda
+Tehničko osoblje:
+	3.7.4  Razmatranje registracije
+Igrač i Klub:
+	3.7.3  Produžavanje registracije 
+	3.7.5  Potvrdjivanje registracije

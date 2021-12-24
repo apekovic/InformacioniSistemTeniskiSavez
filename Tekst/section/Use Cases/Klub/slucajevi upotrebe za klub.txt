@@ -1,5 +1,4 @@
-1. klub moze da:
-	3.3.1. Produžava registraciju.
-	3.3.2. Ažurira podatke.
-	3.3.3. Istupi iz Teniskog Saveza.
-  	3.3.4. Aplicira za organizaciju turnira.
+1. klub:
+	3.3.1. Ažuriranje podataka.
+	3.3.2. Istupanje iz Teniskog saveza.
+  	3.3.3. Apliciranje za organizaciju turnira.

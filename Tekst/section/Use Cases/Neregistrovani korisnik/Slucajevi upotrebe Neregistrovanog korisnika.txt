@@ -1,0 +1,5 @@
+3.1  Neregistrovani korisnik:
+	3.1.1  Pristupanje kalendaru turnira 
+	3.1.2  Uvid u rang listu
+	3.1.3  Uvid u rezultate igrača 
+	3.1.4  Uvid u obaveštenja

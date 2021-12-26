@@ -1,0 +1,48 @@
+\documentclass{article}
+\usepackage{longtable}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\begin{document}
+
+\begin{longtable}{| p{.20\textwidth} | p{.80\textwidth} |} 
+\hline
+    Kratak opis & Organizator dodeljuje igračima specijalne pozivnice za turnir koje igračima stižu na E-mail zbog potvrde o učešću. Igrač koji prima E-mail potvrdjuje učešće ili odbija.\\ 
+\hline    
+    Učesnici & \begin{enumerate}
+        \item Igrač koji je primio specijalnu pozivnicu.
+    \end{enumerate}
+    \\
+\hline
+   Preduslovi & \begin{enumerate}
+       \item Sistem je u funkciji.
+       \item Organizator je poslao specijalnu pozivnicu igraču.
+   \end{enumerate}\\
+\hline  
+    Postuslovi & \begin{enumerate}
+        \item Igrač je prihvatio da učestvuje na turniru.
+        \item Baza se ažurira podaciima o igraču i turniru na kom učestvuje.
+    \end{enumerate}\\
+\hline
+    Osnovni tok & \begin{enumerate}
+        \item Sistem šalje igraču specijalnu pozivnicu za turnir, kao i podatke o turniru. 
+        \item Igrač prihvata pozivnicu.
+        \item Sistem izbacuje obaveštenje o uspešnoj prijavi na turnir i baza se ažurira.
+        \item Sistem šalje E-mail organizatoru da je igrač prihvatio pozivnicu.
+    \end{enumerate}\\
+\hline
+    Alternativni tokovi &
+    \begin{itemize}
+        \item[A2] Igrač odbija pozivnicu i proces se završava. Organizator dobija poruku o odbijanju poziva.
+    \end{itemize}\item \\
+\hline
+    Podtokovi & /\\
+\hline
+    Specijalni zahtevi & /\\
+\hline
+    Dodatne informacije & / \\
+\hline
+ 
+\caption{O specijalne pozivnice} 
+\end{longtable}
+
+\end{document}
